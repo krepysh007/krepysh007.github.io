@@ -1,0 +1,125 @@
+body {
+	background-color: #222
+
+}
+i {
+	padding-right: 10px;
+	margin-top: 15px;
+}
+
+.container{
+	margin: 0 auto;
+	width: auto;
+	color: #fff;
+	}
+.photo {
+	text-align: center;
+	margin-top: 100px;
+	width: auto;
+
+
+}
+.photo img{
+border-radius: 50%;	
+border: 4px solid #fff;
+width: 20%;
+height: 20%;
+}
+.name {
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-weight: bold;
+}
+.contacts {
+	text-align: center;
+	margin-top: 15px;
+}
+.works {
+	text-align: center;
+	margin-top: 15px;
+}
+
+
+.works a img {
+	margin-top: 15px;
+	padding: 15px;
+	width: auto;
+	height: auto;
+	
+	
+}
+.social {
+	text-align: center;
+}
+
+.social a{
+	color: #fff;
+	
+}
+
+*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+
+}
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+.works a {
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+  }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+.photo img{
+	width: 20%;
+	height: 20%;
+}
+  }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+.photo img{
+	width: 30%;
+	height: 30%;
+}
+.works a img {
+	width: 70%;
+	height: 70%;
+   }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+.photo img{
+	width: 30%;
+	height: 30%;
+}
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
