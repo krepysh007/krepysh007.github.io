@@ -1,0 +1,1279 @@
+#title_appointment_form input, .make_an_appointment #make_an_appointment_form input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 10px 0px 10px 10px;
+  margin-top: 46px; }
+
+#title_appointment_form input[id="datepicker"], .make_an_appointment #make_an_appointment_form input[id="datepicker"] {
+  margin-top: 43px;
+  background: url("../img/calendar.png") no-repeat right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+#title_appointment_form select, .make_an_appointment #make_an_appointment_form select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 11px 0px 10px 10px;
+  margin-top: 46px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/arrow_down.png") no-repeat right; }
+
+#title_appointment_form textarea, .make_an_appointment #make_an_appointment_form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 10px 0px 40px 10px;
+  margin-top: 46px; }
+
+#title_appointment_form *::-webkit-input-placeholder, .make_an_appointment #make_an_appointment_form *::-webkit-input-placeholder {
+  color: #8f8f8f;
+  opacity: 1; }
+
+/* Template: Barber
+	Made by Anton Knyazev
+	Barber includes:
+	1. Title section
+	2. About us
+	3. Our services
+	4. Make an appointment
+	5. Our Barbers
+	6. Our clients say
+	7. Our gallery
+	8. Our pricing
+	9. Footer
+
+ */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, nav, section,
+time, mark, audio, video {
+  -webkit-margin-before: 0px;
+  -webkit-margin-after: 0px;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px; }
+
+.container {
+  margin: 0 auto; }
+
+h2 {
+  color: #212121;
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 148px; }
+
+p {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 20px;
+  color: #3d3d3d;
+  line-height: 30px;
+  letter-spacing: 0.025em;
+  width: 558px;
+  margin: 30px auto 0;
+  text-align: center; }
+
+/* icon after h2 */
+.mustahe {
+  margin: 0 auto;
+  width: 305px;
+  height: 18px;
+  background-image: url("../img/css_sprites.png");
+  background-position: -254px -10px;
+  /* 1.Title section */ }
+
+.header_top {
+  background-color: #fff; }
+  .header_top ul {
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+    line-height: 100px; }
+    .header_top ul li {
+      display: inline-block;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-weight: 700;
+      line-height: 24px;
+      font-size: 16px;
+      letter-spacing: 0.025em;
+      color: #454545;
+      position: relative;
+      vertical-align: middle; }
+      .header_top ul li:first-child {
+        margin-left: 140px;
+        width: 165px; }
+        .header_top ul li:first-child::before {
+          content: "\f095";
+          font-family: 'FontAwesome';
+          font-size: 24px;
+          position: absolute;
+          top: 13px;
+          left: -34px;
+          color: #985336; }
+      .header_top ul li:nth-child(2) {
+        margin-left: 84px;
+        width: 225px; }
+        .header_top ul li:nth-child(2)::before {
+          content: "\f041";
+          font-family: 'FontAwesome';
+          font-size: 24px;
+          position: absolute;
+          top: 13px;
+          left: -34px;
+          color: #985336; }
+      .header_top ul li:nth-child(3) {
+        margin-left: 92px;
+        width: 93px; }
+        .header_top ul li:nth-child(3)::before {
+          content: "\f017";
+          font-family: 'FontAwesome';
+          font-size: 24px;
+          position: absolute;
+          top: 13px;
+          left: -34px;
+          color: #985336; }
+      .header_top ul li:last-child {
+        margin-left: 190px; }
+        .header_top ul li:last-child::before {
+          content: "\f002";
+          font-family: 'FontAwesome';
+          font-size: 20px; }
+  .header_top .logo {
+    display: inline-block;
+    float: left; }
+    .header_top .logo a {
+      font-family: "Merriweather", serif;
+      font-size: 30px;
+      line-height: 100px;
+      letter-spacing: 0.025em;
+      color: #985336;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block; }
+
+.title {
+  /* carousel */ }
+  .title .sub_head {
+    background-color: rgba(0, 0, 0, 0.251);
+    border-top: 1px solid #bfbfbf;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 210;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
+    .title .sub_head .menu {
+      float: right; }
+      .title .sub_head .menu ul {
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding-left: 0; }
+        .title .sub_head .menu ul li {
+          text-transform: uppercase;
+          display: inline-block;
+          line-height: 99px; }
+          .title .sub_head .menu ul li a {
+            text-decoration: none;
+            color: #e8e6e6;
+            font-family: "Quattrocento Sans", sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            padding: 0px 25px; }
+          .title .sub_head .menu ul li:hover {
+            background-color: rgba(153, 84, 55, 0.7);
+            border-bottom: 2px solid #995437;
+            line-height: 97px; }
+      .title .sub_head .menu .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #ecf0f1;
+        margin: 6px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        display: none; }
+      .title .sub_head .menu:hover {
+        cursor: pointer; }
+  .title .carousel {
+    position: relative;
+    overflow: hidden;
+    /* Code for navigation arrows */ }
+    .title .carousel:hover .owl-prev {
+      left: 1%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      display: block; }
+    .title .carousel:hover .owl-next {
+      right: 1%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      display: block; }
+    .title .carousel .owl-buttons {
+      font-size: 40px;
+      color: #985336;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .title .carousel .item img {
+      width: 100%; }
+    .title .carousel .item .title_appointment {
+      position: absolute;
+      top: 35%;
+      left: 20.4%; }
+      .title .carousel .item .title_appointment .title_appointment_text {
+        font-size: 72px;
+        font-family: "Merriweather", serif;
+        line-height: 95px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        width: 420px; }
+        .title .carousel .item .title_appointment .title_appointment_text span {
+          color: #985336; }
+      .title .carousel .item .title_appointment button {
+        border: none;
+        background-color: transparent; }
+        .title .carousel .item .title_appointment button a {
+          text-decoration: none;
+          position: absolute;
+          color: #fff;
+          font-family: "Quattrocento Sans", sans-serif;
+          font-size: 30px;
+          border: 1px solid #985336;
+          padding: 23px 20px;
+          top: 300px;
+          left: 0%; }
+          .title .carousel .item .title_appointment button a:hover {
+            background-color: #985336; }
+    .title .carousel .owl-prev {
+      position: absolute;
+      top: 52%;
+      left: -5%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 61px;
+      height: 61px;
+      border: 2px solid #985336;
+      text-align: center; }
+      .title .carousel .owl-prev:hover {
+        background-color: #985336;
+        color: #fff; }
+      .title .carousel .owl-prev:before {
+        content: "\f104";
+        font-family: 'FontAwesome'; }
+    .title .carousel .owl-next {
+      position: absolute;
+      top: 52%;
+      right: -5%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 61px;
+      height: 61px;
+      border: 2px solid #985336;
+      text-align: center; }
+      .title .carousel .owl-next:hover {
+        background-color: #985336;
+        color: #fff; }
+      .title .carousel .owl-next:before {
+        content: "\f105";
+        font-family: 'FontAwesome'; }
+
+/* form with appointment */
+#title_appointment_form {
+  min-height: 1006px;
+  background-image: url("../img/make_in_appointment_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  #title_appointment_form h2 {
+    color: #fff; }
+  #title_appointment_form p {
+    color: #c0c0c0; }
+  #title_appointment_form button {
+    background-color: transparent;
+    border: none;
+    margin-top: 40px;
+    margin-left: -8px; }
+    #title_appointment_form button a {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 30px;
+      padding: 23px 20px;
+      border: 2px solid #6e331a;
+      background-color: #985336; }
+      #title_appointment_form button a:hover {
+        background-color: #fff;
+        color: #985336; }
+
+/* 2. About us */
+.about_us .about_us_icon_container .icon_border {
+  width: 100%;
+  height: 330px;
+  border: 1px solid #d5d3d3;
+  text-align: center;
+  margin-top: 114px; }
+  .about_us .about_us_icon_container .icon_border:hover {
+    background-color: #985336;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-animation: one 3s infinite;
+            animation: one 3s infinite;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1; }
+    .about_us .about_us_icon_container .icon_border:hover h3, .about_us .about_us_icon_container .icon_border:hover p {
+      color: #fff;
+      -webkit-transform: rotateY(180deg);
+              transform: rotateY(180deg);
+      -webkit-transition: all 3s ease;
+      -o-transition: all 3s ease;
+      transition: all 3s ease; }
+    .about_us .about_us_icon_container .icon_border:hover .icon_line {
+      background-color: #fff;
+      -webkit-transition: all 3s ease;
+      -o-transition: all 3s ease;
+      transition: all 3s ease; }
+
+.about_us .about_us_icon_container .col-md-4:first-child .icon_img {
+  width: 102px;
+  height: 102px;
+  margin: -51px auto 0px;
+  background-image: url("../img/css_sprites.png");
+  background-position: -10px -10px; }
+
+.about_us .about_us_icon_container .col-md-4:nth-child(2) .icon_img {
+  width: 102px;
+  height: 102px;
+  margin: -51px auto 0px;
+  background-image: url("../img/css_sprites.png");
+  background-position: -132px -10px; }
+
+.about_us .about_us_icon_container .col-md-4:nth-child(3) .icon_img {
+  width: 102px;
+  height: 102px;
+  margin: -51px auto 0px;
+  background-image: url("../img/css_sprites.png");
+  background-position: -10px -132px; }
+
+.about_us .about_us_icon_container .col-md-4 p {
+  width: 315px;
+  font-size: 18px; }
+
+.about_us .about_us_icon_container .col-md-4 h3 {
+  font-family: "Merriweather", serif;
+  padding-top: 10px; }
+
+.about_us .about_us_icon_container .col-md-4 .icon_line {
+  width: 97px;
+  height: 2px;
+  background-color: #985336;
+  margin: 0 auto; }
+
+.about_us .about_buttom {
+  background-image: url("../img/about_buttom_bg.jpg");
+  background-position: top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 209px;
+  margin-top: 150px;
+  text-align: center; }
+  .about_us .about_buttom .numbers {
+    font-size: 60px;
+    color: #985336;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    margin-top: 62px; }
+  .about_us .about_buttom .number_text {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-weight: 700; }
+
+@-webkit-keyframes one {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); } }
+
+@keyframes one {
+  0% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg); }
+  100% {
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg); } }
+
+/* 3. Our servises */
+.our_services {
+  background-image: url("../img/service_man.png");
+  min-height: 1319px;
+  background-position: top center; }
+  .our_services .service_man {
+    position: relative; }
+    .our_services .service_man .service_name h3 {
+      text-align: right; }
+    .our_services .service_man .service_name p {
+      text-align: right;
+      width: 390px; }
+    .our_services .service_man .service_name:first-child {
+      position: absolute;
+      left: 154px;
+      top: 190px; }
+      .our_services .service_man .service_name:first-child .service_img {
+        background-image: url("../img/css_sprites.png");
+        width: 90px;
+        height: 90px;
+        background-position: -254px -48px;
+        position: absolute;
+        top: 15%;
+        left: 400px; }
+    .our_services .service_man .service_name:nth-child(2) {
+      position: absolute;
+      left: 154px;
+      top: 490px; }
+      .our_services .service_man .service_name:nth-child(2) .service_img {
+        background-image: url("../img/css_sprites.png");
+        width: 90px;
+        height: 90px;
+        background-position: -132px -132px;
+        position: absolute;
+        top: 15%;
+        left: 400px; }
+    .our_services .service_man .service_name:nth-child(3) {
+      position: absolute;
+      right: 154px;
+      top: 190px; }
+      .our_services .service_man .service_name:nth-child(3) h3, .our_services .service_man .service_name:nth-child(3) p {
+        text-align: left; }
+      .our_services .service_man .service_name:nth-child(3) .service_img {
+        background-image: url("../img/css_sprites.png");
+        width: 90px;
+        height: 90px;
+        background-position: -364px -48px;
+        position: absolute;
+        top: 15%;
+        right: 400px; }
+    .our_services .service_man .service_name:nth-child(4) {
+      position: absolute;
+      right: 154px;
+      top: 490px; }
+      .our_services .service_man .service_name:nth-child(4) h3, .our_services .service_man .service_name:nth-child(4) p {
+        text-align: left; }
+      .our_services .service_man .service_name:nth-child(4) .service_img {
+        background-image: url("../img/css_sprites.png");
+        width: 90px;
+        height: 90px;
+        background-position: -10px -254px;
+        position: absolute;
+        top: 15%;
+        right: 400px; }
+
+/* 4. Make an appointment */
+.make_an_appointment {
+  min-height: 1006px;
+  background-image: url("../img/make_in_appointment_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; }
+  .make_an_appointment h2 {
+    color: #fff; }
+  .make_an_appointment p {
+    color: #c0c0c0; }
+  .make_an_appointment #make_an_appointment_form {
+    margin-top: 20px; }
+  .make_an_appointment button {
+    background-color: transparent;
+    border: none;
+    margin-top: 40px;
+    margin-left: -8px; }
+    .make_an_appointment button a {
+      text-decoration: none;
+      color: #fff;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 30px;
+      padding: 23px 20px;
+      border: 2px solid #6e331a;
+      background-color: #985336; }
+      .make_an_appointment button a:hover {
+        background-color: #fff;
+        color: #985336; }
+
+/* 5. Our Barbers */
+.our_barbers .barber_container .barber_img {
+  margin-top: 60px; }
+
+.our_barbers .barber_container h3 {
+  text-align: center;
+  margin-top: 30px; }
+
+.our_barbers .barber_container p {
+  width: auto; }
+
+.our_barbers .barber_container .barber_rate {
+  text-align: center;
+  color: #985336;
+  font-size: 18px; }
+
+/* 6. Our client say */
+.our_clients_say {
+  background-image: url("../img/client_say_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: top center;
+  min-height: 870px;
+  margin-top: 150px; }
+  .our_clients_say h2 {
+    color: #fff; }
+  .our_clients_say p {
+    color: #c0c0c0; }
+  .our_clients_say .carousel {
+    position: relative;
+    overflow: hidden; }
+    .our_clients_say .carousel:hover .owl-prev {
+      left: 1%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      display: block; }
+    .our_clients_say .carousel:hover .owl-next {
+      right: 1%;
+      -webkit-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      display: block; }
+    .our_clients_say .carousel .owl-buttons {
+      font-size: 20px;
+      color: #985336;
+      -webkit-border-radius: 50%;
+              border-radius: 50%; }
+    .our_clients_say .carousel .client_item {
+      margin-top: 40px;
+      text-align: center; }
+      .our_clients_say .carousel .client_item .client_say_rate {
+        color: #985336;
+        font-size: 18px; }
+      .our_clients_say .carousel .client_item p {
+        width: 790px;
+        font-size: 18px; }
+      .our_clients_say .carousel .client_item .client_img {
+        margin-top: 60px; }
+        .our_clients_say .carousel .client_item .client_img .client_name {
+          color: #fff;
+          font-family: "Merriweather", serif;
+          margin-top: 20px; }
+    .our_clients_say .carousel .owl-prev {
+      position: absolute;
+      top: 35%;
+      left: -5%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 31px;
+      height: 31px;
+      border: 2px solid #985336;
+      text-align: center; }
+      .our_clients_say .carousel .owl-prev:hover {
+        background-color: #985336;
+        color: #1d1817; }
+      .our_clients_say .carousel .owl-prev:before {
+        content: "\f104";
+        font-family: 'FontAwesome'; }
+    .our_clients_say .carousel .owl-next {
+      position: absolute;
+      top: 35%;
+      right: -5%;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 31px;
+      height: 31px;
+      border: 2px solid #985336;
+      text-align: center;
+      vertical-align: middle; }
+      .our_clients_say .carousel .owl-next:hover {
+        background-color: #985336;
+        color: #1d1817; }
+      .our_clients_say .carousel .owl-next:before {
+        content: "\f105";
+        font-family: 'FontAwesome'; }
+
+/* 7. Our gallery */
+.our_gallery {
+  width: 100%;
+  margin: auto; }
+  .our_gallery .gallery_img {
+    width: 100%;
+    margin-top: 55px; }
+    .our_gallery .gallery_img .galery_item {
+      float: left;
+      height: auto;
+      margin: 0;
+      width: 20%; }
+      .our_gallery .gallery_img .galery_item img {
+        width: 100%; }
+
+/* 8. Our pricing */
+.our_pricing .price_list {
+  text-align: center; }
+  .our_pricing .price_list .man_price {
+    display: inline-block;
+    margin: 60px 15px 150px 15px; }
+    .our_pricing .price_list .man_price .man_title {
+      text-align: center;
+      font-family: "Merriweather", serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: #fff;
+      background-color: #303030;
+      padding: 27px 142px; }
+    .our_pricing .price_list .man_price .service_list_man {
+      width: 360px;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 40px 18px 0px 20px;
+      border-left: 1px solid #c6c6c6;
+      border-right: 1px solid #c6c6c6; }
+      .our_pricing .price_list .man_price .service_list_man ul {
+        list-style-type: none; }
+        .our_pricing .price_list .man_price .service_list_man ul li {
+          margin-bottom: 20px;
+          text-align: left; }
+          .our_pricing .price_list .man_price .service_list_man ul li .name_service {
+            display: inline-block; }
+          .our_pricing .price_list .man_price .service_list_man ul li .service_price {
+            display: inline-block;
+            float: right; }
+    .our_pricing .price_list .man_price button {
+      border: none;
+      padding: 0; }
+      .our_pricing .price_list .man_price button a {
+        background-color: #303030;
+        text-transform: uppercase;
+        font-family: "Merriweather", serif;
+        font-size: 18px;
+        color: #fff;
+        padding: 20px 110px; }
+        .our_pricing .price_list .man_price button a:hover {
+          text-decoration: none; }
+  .our_pricing .price_list .woman_price {
+    display: inline-block;
+    margin: 60px 15px 150px 15px; }
+    .our_pricing .price_list .woman_price .woman_title {
+      text-align: center;
+      font-family: "Merriweather", serif;
+      font-size: 30px;
+      font-weight: 400;
+      color: #fff;
+      background-color: #995437;
+      padding: 27px 116px; }
+    .our_pricing .price_list .woman_price .service_list_woman {
+      width: 360px;
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 18px;
+      line-height: 30px;
+      padding: 40px 18px 0px 20px;
+      border-left: 1px solid #c6c6c6;
+      border-right: 1px solid #c6c6c6; }
+      .our_pricing .price_list .woman_price .service_list_woman ul {
+        list-style-type: none; }
+        .our_pricing .price_list .woman_price .service_list_woman ul li {
+          margin-bottom: 20px;
+          text-align: left; }
+          .our_pricing .price_list .woman_price .service_list_woman ul li .name_service {
+            display: inline-block;
+            text-align: left; }
+          .our_pricing .price_list .woman_price .service_list_woman ul li .service_price {
+            display: inline-block;
+            float: right; }
+    .our_pricing .price_list .woman_price button {
+      border: none;
+      padding: 0; }
+      .our_pricing .price_list .woman_price button a {
+        background-color: #995437;
+        text-transform: uppercase;
+        font-family: "Merriweather", serif;
+        font-size: 18px;
+        color: #fff;
+        padding: 20px 110px; }
+        .our_pricing .price_list .woman_price button a:hover {
+          text-decoration: none; }
+
+/* 9. Footer */
+.footer_main {
+  background-image: url("../img/footer_bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 620px; }
+  .footer_main h3 {
+    font-family: "Merriweather", serif;
+    font-size: 20px;
+    color: #985336;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 150px; }
+  .footer_main .subscribe_text {
+    width: 233px;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: left;
+    color: #f2f2f2;
+    font-family: "Quattrocento Sans", sans-serif;
+    margin-top: 70px; }
+  .footer_main .subscribe_form {
+    margin-top: 47px; }
+    .footer_main .subscribe_form .subscribe_email {
+      padding-left: 20px;
+      height: 53px;
+      border: 1px solid #a7a7a7; }
+    .footer_main .subscribe_form .subscribe_button {
+      font-size: 18px;
+      background-color: #985336;
+      border: none;
+      height: 53px;
+      width: 53px;
+      position: absolute;
+      overflow: hidden; }
+      .footer_main .subscribe_form .subscribe_button .fa-paper-plane {
+        color: #fff; }
+    .footer_main .subscribe_form:hover .fa-paper-plane {
+      -webkit-transform: translateX(40px) translateY(-40px);
+          -ms-transform: translateX(40px) translateY(-40px);
+              transform: translateX(40px) translateY(-40px);
+      -webkit-transition: all 0.3s ease 0.2s;
+      -o-transition: all 0.3s ease 0.2s;
+      transition: all 0.3s ease 0.2s; }
+  .footer_main .footer_working_hours h3 {
+    text-align: center; }
+  .footer_main .footer_working_hours ul {
+    text-transform: uppercase;
+    list-style: none;
+    margin-top: 70px;
+    color: #f2f2f2;
+    font-family: "Quattrocento Sans", sans-serif;
+    margin-top: 70px;
+    padding: 0 20px; }
+    .footer_main .footer_working_hours ul li {
+      margin-top: 20px; }
+      .footer_main .footer_working_hours ul li span {
+        float: right; }
+  .footer_main .footer_blog h3 {
+    text-align: center; }
+  .footer_main .footer_blog .blog_container {
+    margin-top: 70px; }
+    .footer_main .footer_blog .blog_container .article_title {
+      font-family: "Quattrocento Sans", sans-serif;
+      font-size: 18px;
+      color: #985336; }
+    .footer_main .footer_blog .blog_container .article_p {
+      margin: 25px 0;
+      color: #f2f2f2;
+      font-size: 14px; }
+  .footer_main .footer_instagram h3 {
+    text-align: right; }
+  .footer_main .footer_instagram .inst_list {
+    margin-top: 70px;
+    text-align: right; }
+    .footer_main .footer_instagram .inst_list a {
+      margin-left: 15px; }
+      .footer_main .footer_instagram .inst_list a:nth-child(n+4) img {
+        margin-top: 15px; }
+
+/* footer copyright with social icons */
+.footer_buttom {
+  padding: 25px 0px;
+  background-color: #000;
+  color: #fff;
+  line-height: 88px;
+  /* social icons */ }
+  .footer_buttom .copyright {
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 24px;
+    display: inline-block; }
+  .footer_buttom .social {
+    display: inline-block;
+    float: right; }
+    .footer_buttom .social ul {
+      list-style: none; }
+      .footer_buttom .social ul li {
+        display: inline-block; }
+        .footer_buttom .social ul li a {
+          color: #fff;
+          width: 39px;
+          height: 39px;
+          display: block;
+          border: 1px solid #fff;
+          text-align: center;
+          line-height: 39px;
+          font-size: 24px;
+          margin-right: 8px; }
+
+/* button top*/
+#btn_top {
+  color: #fff;
+  font-size: 40px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 20;
+  background-color: #985336;
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px; }
+
+.fa-angle-double-up:before {
+  color: #fff; }
+
+#title_appointment_form input, .make_an_appointment #make_an_appointment_form input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 10px 0px 10px 10px;
+  margin-top: 46px; }
+
+#title_appointment_form input[id="datepicker"], .make_an_appointment #make_an_appointment_form input[id="datepicker"] {
+  margin-top: 43px;
+  background: url("../img/calendar.png") no-repeat right;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+#title_appointment_form select, .make_an_appointment #make_an_appointment_form select {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 11px 0px 10px 10px;
+  margin-top: 46px;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/arrow_down.png") no-repeat right; }
+
+#title_appointment_form textarea, .make_an_appointment #make_an_appointment_form textarea {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #c1c1c1;
+  color: #8f8f8f;
+  padding: 10px 0px 40px 10px;
+  margin-top: 46px; }
+
+#title_appointment_form *::-webkit-input-placeholder, .make_an_appointment #make_an_appointment_form *::-webkit-input-placeholder {
+  color: #8f8f8f;
+  opacity: 1; }
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width: 1400px) {
+  /* Services section, service list */
+  .our_services .service_man .service_name:first-child {
+    left: 54px;
+    top: 190px; }
+  .our_services .service_man .service_name:nth-child(2) {
+    position: absolute;
+    left: 54px;
+    top: 490px; }
+  .our_services .service_man .service_name:nth-child(3) {
+    position: absolute;
+    right: 54px;
+    top: 190px; }
+  .our_services .service_man .service_name:nth-child(4) {
+    position: absolute;
+    right: 54px;
+    top: 490px; } }
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  h2 {
+    padding-top: 100px;
+    font-size: 28px; }
+  /*header */
+  .header_top ul {
+    float: right; }
+  .header_top ul li {
+    font-size: 14px; }
+    .header_top ul li:first-child {
+      margin-left: 90px;
+      width: 155px; }
+      .header_top ul li:first-child::before {
+        font-size: 20px; }
+    .header_top ul li:nth-child(2) {
+      margin-left: 70px;
+      width: 220px; }
+      .header_top ul li:nth-child(2)::before {
+        font-size: 20px; }
+    .header_top ul li:nth-child(3) {
+      margin-left: 70px;
+      width: 90px; }
+      .header_top ul li:nth-child(3)::before {
+        font-size: 20px; }
+    .header_top ul li:last-child {
+      margin-left: 100px; }
+      .header_top ul li:last-child::before {
+        font-size: 20px; }
+  .title .sub_head .menu ul li a {
+    padding: 0px 14px; }
+  /* Text in center of carousel */
+  .title .carousel .item .title_appointment .title_appointment_text {
+    font-size: 55px;
+    line-height: 65px;
+    width: 340px; }
+  /* Carousel navigation button */
+  .title .carousel .owl-next {
+    right: -10%; }
+  .title .carousel .owl-prev {
+    left: -10%; }
+  /* Button in carousel */
+  .title .carousel .item .title_appointment button a {
+    top: 220px;
+    padding: 20px 18px; }
+  /* Second section about us */
+  .about_us .about_us_icon_container .col-md-4 p {
+    width: auto;
+    margin: 0 auto;
+    padding: 0 5px; }
+  .about_us h2 {
+    font-size: 28px; }
+  /* Services section, service list */
+  .our_services {
+    background-image: none; }
+  .our_services .service_man {
+    position: static; }
+  .our_services .service_man .service_name h3 {
+    text-align: center;
+    margin: 10px auto 0px; }
+  .our_services .service_man .service_name p {
+    margin: 0px auto 0px;
+    text-align: center;
+    width: auto; }
+  /* Reset position for elements */
+  .our_services .service_man .service_name:first-child {
+    position: static;
+    margin: 50px auto 0px; }
+  .our_services .service_man .service_name:first-child .service_img {
+    position: static;
+    margin: 0 auto; }
+  .our_services .service_man .service_name:nth-child(2) {
+    position: static;
+    margin: 50px auto 0px; }
+  .our_services .service_man .service_name:nth-child(2) .service_img {
+    position: static;
+    margin: 0 auto; }
+  .our_services .service_man .service_name:nth-child(3) {
+    position: static;
+    margin: 50px auto 0px; }
+  .our_services .service_man .service_name:nth-child(3) h3, .our_services .service_man .service_name:nth-child(3) p {
+    text-align: center; }
+  .our_services .service_man .service_name:nth-child(3) .service_img {
+    position: static;
+    margin: 20px auto 0px; }
+  .our_services .service_man .service_name:nth-child(4) {
+    position: static;
+    margin: 50px auto 0px; }
+  .our_services .service_man .service_name:nth-child(4) h3, .our_services .service_man .service_name:nth-child(4) p {
+    text-align: center; }
+  .our_services .service_man .service_name:nth-child(4) .service_img {
+    position: static;
+    margin: 20px auto 0px; }
+  /* Section our barbers */
+  .our_barbers .barber_container .barber_img img {
+    width: 100%;
+    height: 100%; }
+  /* footer */
+  /* instagram images */
+  .footer_main .footer_instagram .inst_list a:nth-child(n+3) img {
+    margin-top: 15px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/
+  h2 {
+    padding-top: 50px; }
+  .header_top ul li {
+    font-size: 13px; }
+    .header_top ul li:first-child {
+      margin-left: 40px;
+      width: 145px; }
+      .header_top ul li:first-child::before {
+        font-size: 18px; }
+    .header_top ul li:nth-child(2) {
+      margin-left: 30px;
+      width: 200px; }
+      .header_top ul li:nth-child(2)::before {
+        font-size: 18px; }
+    .header_top ul li:nth-child(3) {
+      margin-left: 30px;
+      width: 80px; }
+      .header_top ul li:nth-child(3)::before {
+        font-size: 20px; }
+    .header_top ul li:last-child {
+      margin-left: 30px; }
+      .header_top ul li:last-child::before {
+        font-size: 18px; }
+  .title .sub_head .menu ul li {
+    line-height: 70px; }
+    .title .sub_head .menu ul li a {
+      padding: 0px 10px;
+      font-size: 15px; }
+    .title .sub_head .menu ul li:hover {
+      line-height: 68px; }
+  .title .carousel .owl-buttons {
+    font-size: 30px; }
+  .title .carousel .owl-prev {
+    width: 51px;
+    height: 51px; }
+  .title .carousel .owl-next {
+    width: 51px;
+    height: 51px; }
+  .title .carousel .item .title_appointment {
+    left: 17%; }
+  .title .carousel .item .title_appointment .title_appointment_text {
+    font-size: 40px;
+    line-height: 50px;
+    width: 260px; }
+  .title .carousel .item .title_appointment button a {
+    top: 150px;
+    padding: 12px 11px;
+    font-size: 20px; }
+  /* Section about, about buttom */
+  .about_us .about_buttom {
+    padding-bottom: 40px; }
+  /* Section make an appointment */
+  #title_appointment_form input, .make_an_appointment #make_an_appointment_form input,
+  #title_appointment_form input[id="datepicker"], .make_an_appointment #make_an_appointment_form input[id="datepicker"],
+  #title_appointment_form select, .make_an_appointment #make_an_appointment_form select {
+    margin-top: 20px; }
+  .make_an_appointment button a {
+    padding: 12px 11px;
+    font-size: 20px; }
+  /* Section Barber */
+  .our_barbers .barber_container .barber_img {
+    text-align: center; }
+    .our_barbers .barber_container .barber_img img {
+      width: 50%;
+      height: 50%; }
+  /* Section our clients say */
+  .our_clients_say .carousel .client_item p {
+    padding: 0px 50px;
+    width: auto;
+    font-size: 16px; }
+  /* Section gallery */
+  .our_gallery .gallery_img .galery_item {
+    width: 50%; }
+  /* footer */
+  .footer_main h3 {
+    text-align: center;
+    margin-top: 50px; }
+  .footer_main .subscribe_text {
+    text-align: center;
+    width: auto; }
+  .footer_main .subscribe_form {
+    text-align: center; }
+  .footer_main .footer_working_hours ul {
+    padding: 0 100px; }
+  .footer_main .footer_blog .blog_container {
+    text-align: center; }
+  .footer_main .footer_instagram h3 {
+    text-align: center; }
+  .footer_main .footer_instagram .inst_list {
+    text-align: center; }
+  .footer_main .footer_instagram .inst_list a:nth-child(n+1) img {
+    margin-top: 0px;
+    margin-bottom: 20px; }
+  .footer_buttom .social {
+    float: none;
+    text-align: center;
+    display: block; }
+  .footer_buttom .copyright {
+    display: block;
+    text-align: center; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/
+  p {
+    width: auto;
+    line-height: 20px;
+    font-size: 20px; }
+  .header_top ul li:nth-child(3) {
+    display: none; }
+  .title .sub_head .menu .hamburger {
+    position: relative;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    padding: 10px; }
+  .title .sub_head .menu .hamburger .line {
+    display: block;
+    width: 23px; }
+  .title .sub_head .menu ul {
+    display: none; }
+    .title .sub_head .menu ul li:hover {
+      border-bottom: none; }
+  .title .sub_head .menu ul.is-active {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-bottom: 6px solid #985336;
+    top: 53px;
+    z-index: 10; }
+    .title .sub_head .menu ul.is-active li {
+      display: block;
+      line-height: 50px; }
+  .title .carousel .owl-buttons {
+    font-size: 25px; }
+  .title .carousel .owl-prev {
+    width: 45px;
+    height: 45px; }
+  .title .carousel .owl-next {
+    width: 45px;
+    height: 45px; }
+  .hamburger:before {
+    content: "";
+    position: absolute;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    border: 5px solid transparent;
+    top: -webkit-calc(50% - 21px);
+    top: calc(50% - 21px);
+    left: -webkit-calc(50% - 40px);
+    left: calc(50% - 40px);
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-transform: translateY(30px);
+        -ms-transform: translateY(30px);
+            transform: translateY(30px);
+    -webkit-transform: translateX(20px) rotate(-45deg);
+        -ms-transform: translateX(20px) rotate(-45deg);
+            transform: translateX(20px) rotate(-45deg); }
+  .hamburger.is-active:before {
+    border: 3px solid #ecf0f1; }
+  .hamburger.is-active .line {
+    width: 35px; }
+  .hamburger.is-active .line:nth-child(2) {
+    opacity: 0; }
+  .hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(-45deg);
+        -ms-transform: translateY(8px) rotate(-45deg);
+            transform: translateY(8px) rotate(-45deg); }
+  .hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-10px) rotate(45deg);
+        -ms-transform: translateY(-10px) rotate(45deg);
+            transform: translateY(-10px) rotate(45deg); }
+  /* Carousel navigation button */
+  .our_clients_say .carousel .owl-prev {
+    left: -15%; }
+  .our_clients_say .carousel .owl-next {
+    right: -15%; }
+  /* footer */
+  .footer_buttom .copyright {
+    font-size: 15px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 640px) {
+  /**/
+  .header_top ul li:nth-child(2),
+  .header_top ul li:nth-child(3),
+  .header_top ul li:last-child {
+    display: none; }
+  .title .carousel .item .title_appointment .title_appointment_text {
+    font-size: 30px;
+    line-height: 35px;
+    width: 180px; }
+  .title .carousel .item .title_appointment button a {
+    top: 110px;
+    padding: 8px 6px;
+    font-size: 15px; }
+  /* Section pricing */
+  .our_pricing .price_list .man_price .service_list_man {
+    width: auto; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/
+  .title .carousel .item .title_appointment .title_appointment_text {
+    font-size: 25px;
+    line-height: 30px;
+    width: 180px; }
+  .title .carousel .item .title_appointment button a {
+    top: 90px;
+    padding: 6px 4px;
+    font-size: 12px; }
+  .title .carousel .owl-buttons {
+    font-size: 20px; }
+  .title .carousel .owl-prev {
+    width: 40px;
+    height: 40px; }
+  .title .carousel .owl-next {
+    width: 40px;
+    height: 40px; } }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
