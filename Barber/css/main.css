@@ -35,7 +35,8 @@
   border-bottom: 1px solid #c1c1c1;
   color: #8f8f8f;
   padding: 10px 0px 40px 10px;
-  margin-top: 46px; }
+  margin-top: 46px;
+  margin-bottom: 40px; }
 
 #title_appointment_form *::-webkit-input-placeholder, .make_an_appointment #make_an_appointment_form *::-webkit-input-placeholder {
   color: #8f8f8f;
@@ -55,6 +56,7 @@
 	9. Footer
 
  */
+/* reser chrome user styles */
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code,
@@ -76,13 +78,41 @@ time, mark, audio, video {
 .container {
   margin: 0 auto; }
 
+/* Preloader on page */
+.loaderArea {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999; }
+  .loaderArea .loader {
+    background-image: url("../img/preloader.gif");
+    -webkit-background-size: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #fff;
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+    left: 50%;
+    top: 50%;
+    position: absolute; }
+
 h2 {
   color: #212121;
   font-family: "Merriweather", serif;
   font-size: 36px;
   text-transform: uppercase;
-  text-align: center;
-  padding-top: 148px; }
+  text-align: center; }
+
+section {
+  padding: 148px 0px 10px; }
 
 p {
   font-family: "Quattrocento Sans", sans-serif;
@@ -174,6 +204,7 @@ p {
       display: inline-block; }
 
 .title {
+  padding-top: 0px;
   /* carousel */ }
   .title .sub_head {
     background-color: rgba(0, 0, 0, 0.251);
@@ -195,7 +226,8 @@ p {
         .title .sub_head .menu ul li {
           text-transform: uppercase;
           display: inline-block;
-          line-height: 99px; }
+          line-height: 99px;
+          border-bottom: 2px solid transparent; }
           .title .sub_head .menu ul li a {
             text-decoration: none;
             color: #e8e6e6;
@@ -218,34 +250,38 @@ p {
         display: none; }
       .title .sub_head .menu:hover {
         cursor: pointer; }
-  .title .carousel {
+  .title .owl-carousel {
     position: relative;
     overflow: hidden;
     /* Code for navigation arrows */ }
-    .title .carousel:hover .owl-prev {
+    .title .owl-carousel:hover .owl-prev {
       left: 1%;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: block; }
-    .title .carousel:hover .owl-next {
+    .title .owl-carousel:hover .owl-next {
       right: 1%;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: block; }
-    .title .carousel .owl-buttons {
+    .title .owl-carousel .owl-buttons {
       font-size: 40px;
       color: #985336;
       -webkit-border-radius: 50%;
               border-radius: 50%; }
-    .title .carousel .item img {
-      width: 100%; }
-    .title .carousel .item .title_appointment {
+    .title .owl-carousel .item .carousel_img {
+      background-image: url("../img/title_bg.jpg");
+      -webkit-background-size: cover;
+              background-size: cover;
+      background-position: center center;
+      min-height: 984px; }
+    .title .owl-carousel .item .title_appointment {
       position: absolute;
       top: 35%;
       left: 20.4%; }
-      .title .carousel .item .title_appointment .title_appointment_text {
+      .title .owl-carousel .item .title_appointment .title_appointment_text {
         font-size: 72px;
         font-family: "Merriweather", serif;
         line-height: 95px;
@@ -253,24 +289,21 @@ p {
         text-transform: uppercase;
         color: #fff;
         width: 420px; }
-        .title .carousel .item .title_appointment .title_appointment_text span {
+        .title .owl-carousel .item .title_appointment .title_appointment_text span {
           color: #985336; }
-      .title .carousel .item .title_appointment button {
-        border: none;
-        background-color: transparent; }
-        .title .carousel .item .title_appointment button a {
-          text-decoration: none;
-          position: absolute;
-          color: #fff;
-          font-family: "Quattrocento Sans", sans-serif;
-          font-size: 30px;
-          border: 1px solid #985336;
-          padding: 23px 20px;
-          top: 300px;
-          left: 0%; }
-          .title .carousel .item .title_appointment button a:hover {
-            background-color: #985336; }
-    .title .carousel .owl-prev {
+      .title .owl-carousel .item .title_appointment a {
+        text-decoration: none;
+        position: absolute;
+        color: #fff;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 30px;
+        border: 1px solid #985336;
+        padding: 23px 20px;
+        top: 300px;
+        left: 0%; }
+        .title .owl-carousel .item .title_appointment a:hover {
+          background-color: #985336; }
+    .title .owl-carousel .owl-prev {
       position: absolute;
       top: 52%;
       left: -5%;
@@ -280,13 +313,14 @@ p {
       height: 61px;
       border: 2px solid #985336;
       text-align: center; }
-      .title .carousel .owl-prev:hover {
+      .title .owl-carousel .owl-prev:hover {
         background-color: #985336;
         color: #fff; }
-      .title .carousel .owl-prev:before {
+      .title .owl-carousel .owl-prev:before {
         content: "\f104";
-        font-family: 'FontAwesome'; }
-    .title .carousel .owl-next {
+        font-family: 'FontAwesome';
+        font-size: 40px; }
+    .title .owl-carousel .owl-next {
       position: absolute;
       top: 52%;
       right: -5%;
@@ -294,14 +328,19 @@ p {
               border-radius: 50%;
       width: 61px;
       height: 61px;
-      border: 2px solid #985336;
-      text-align: center; }
-      .title .carousel .owl-next:hover {
+      border: 2px solid #985336; }
+      .title .owl-carousel .owl-next:hover {
         background-color: #985336;
         color: #fff; }
-      .title .carousel .owl-next:before {
+      .title .owl-carousel .owl-next:before {
         content: "\f105";
-        font-family: 'FontAwesome'; }
+        font-family: 'FontAwesome';
+        font-size: 40px; }
+    .title .owl-carousel .owl-dots {
+      position: absolute;
+      bottom: 20px;
+      left: 49%;
+      display: none; }
 
 /* form with appointment */
 #title_appointment_form {
@@ -315,22 +354,18 @@ p {
     color: #fff; }
   #title_appointment_form p {
     color: #c0c0c0; }
-  #title_appointment_form button {
-    background-color: transparent;
-    border: none;
+  #title_appointment_form a {
     margin-top: 40px;
-    margin-left: -8px; }
-    #title_appointment_form button a {
-      text-decoration: none;
-      color: #fff;
-      font-family: "Quattrocento Sans", sans-serif;
-      font-size: 30px;
-      padding: 23px 20px;
-      border: 2px solid #6e331a;
-      background-color: #985336; }
-      #title_appointment_form button a:hover {
-        background-color: #fff;
-        color: #985336; }
+    text-decoration: none;
+    color: #fff;
+    font-family: "Quattrocento Sans", sans-serif;
+    font-size: 30px;
+    padding: 23px 20px;
+    border: 2px solid #6e331a;
+    background-color: #985336; }
+    #title_appointment_form a:hover {
+      background-color: #fff;
+      color: #985336; }
 
 /* 2. About us */
 .about_us .about_us_icon_container .icon_border {
@@ -338,7 +373,10 @@ p {
   height: 330px;
   border: 1px solid #d5d3d3;
   text-align: center;
-  margin-top: 114px; }
+  margin-top: 114px;
+  -webkit-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease; }
   .about_us .about_us_icon_container .icon_border:hover {
     background-color: #985336;
     -webkit-transform: rotateY(180deg);
@@ -385,17 +423,26 @@ p {
 
 .about_us .about_us_icon_container .col-md-4 p {
   width: 315px;
-  font-size: 18px; }
+  font-size: 18px;
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease; }
 
 .about_us .about_us_icon_container .col-md-4 h3 {
   font-family: "Merriweather", serif;
-  padding-top: 10px; }
+  padding-top: 10px;
+  -webkit-transition: all 3s ease;
+  -o-transition: all 3s ease;
+  transition: all 3s ease; }
 
 .about_us .about_us_icon_container .col-md-4 .icon_line {
   width: 97px;
   height: 2px;
   background-color: #985336;
-  margin: 0 auto; }
+  margin: 10px auto 10px;
+  -webkit-transition: all 5s ease;
+  -o-transition: all 5s ease;
+  transition: all 5s ease; }
 
 .about_us .about_buttom {
   background-image: url("../img/about_buttom_bg.jpg");
@@ -512,12 +559,7 @@ p {
     color: #c0c0c0; }
   .make_an_appointment #make_an_appointment_form {
     margin-top: 20px; }
-  .make_an_appointment button {
-    background-color: transparent;
-    border: none;
-    margin-top: 40px;
-    margin-left: -8px; }
-    .make_an_appointment button a {
+    .make_an_appointment #make_an_appointment_form a {
       text-decoration: none;
       color: #fff;
       font-family: "Quattrocento Sans", sans-serif;
@@ -525,7 +567,7 @@ p {
       padding: 23px 20px;
       border: 2px solid #6e331a;
       background-color: #985336; }
-      .make_an_appointment button a:hover {
+      .make_an_appointment #make_an_appointment_form a:hover {
         background-color: #fff;
         color: #985336; }
 
@@ -557,42 +599,46 @@ p {
     color: #fff; }
   .our_clients_say p {
     color: #c0c0c0; }
-  .our_clients_say .carousel {
+  .our_clients_say .owl-carousel {
     position: relative;
     overflow: hidden; }
-    .our_clients_say .carousel:hover .owl-prev {
+    .our_clients_say .owl-carousel:hover .owl-prev {
       left: 1%;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: block; }
-    .our_clients_say .carousel:hover .owl-next {
+    .our_clients_say .owl-carousel:hover .owl-next {
       right: 1%;
       -webkit-transition: all 0.3s ease-in-out;
       -o-transition: all 0.3s ease-in-out;
       transition: all 0.3s ease-in-out;
       display: block; }
-    .our_clients_say .carousel .owl-buttons {
+    .our_clients_say .owl-carousel .owl-buttons {
       font-size: 20px;
       color: #985336;
       -webkit-border-radius: 50%;
               border-radius: 50%; }
-    .our_clients_say .carousel .client_item {
+    .our_clients_say .owl-carousel .client_item {
       margin-top: 40px;
       text-align: center; }
-      .our_clients_say .carousel .client_item .client_say_rate {
+      .our_clients_say .owl-carousel .client_item .client_say_rate {
         color: #985336;
         font-size: 18px; }
-      .our_clients_say .carousel .client_item p {
+      .our_clients_say .owl-carousel .client_item p {
         width: 790px;
         font-size: 18px; }
-      .our_clients_say .carousel .client_item .client_img {
+      .our_clients_say .owl-carousel .client_item .client_img {
         margin-top: 60px; }
-        .our_clients_say .carousel .client_item .client_img .client_name {
+        .our_clients_say .owl-carousel .client_item .client_img img {
+          width: auto;
+          height: auto;
+          margin: 0 auto; }
+        .our_clients_say .owl-carousel .client_item .client_img .client_name {
           color: #fff;
           font-family: "Merriweather", serif;
           margin-top: 20px; }
-    .our_clients_say .carousel .owl-prev {
+    .our_clients_say .owl-carousel .owl-prev {
       position: absolute;
       top: 35%;
       left: -5%;
@@ -601,14 +647,16 @@ p {
       width: 31px;
       height: 31px;
       border: 2px solid #985336;
-      text-align: center; }
-      .our_clients_say .carousel .owl-prev:hover {
+      text-align: center;
+      color: #985336; }
+      .our_clients_say .owl-carousel .owl-prev:hover {
         background-color: #985336;
         color: #1d1817; }
-      .our_clients_say .carousel .owl-prev:before {
+      .our_clients_say .owl-carousel .owl-prev:before {
         content: "\f104";
-        font-family: 'FontAwesome'; }
-    .our_clients_say .carousel .owl-next {
+        font-family: 'FontAwesome';
+        font-size: 20px; }
+    .our_clients_say .owl-carousel .owl-next {
       position: absolute;
       top: 35%;
       right: -5%;
@@ -618,13 +666,15 @@ p {
       height: 31px;
       border: 2px solid #985336;
       text-align: center;
+      color: #985336;
       vertical-align: middle; }
-      .our_clients_say .carousel .owl-next:hover {
+      .our_clients_say .owl-carousel .owl-next:hover {
         background-color: #985336;
         color: #1d1817; }
-      .our_clients_say .carousel .owl-next:before {
+      .our_clients_say .owl-carousel .owl-next:before {
         content: "\f105";
-        font-family: 'FontAwesome'; }
+        font-family: 'FontAwesome';
+        font-size: 20px; }
 
 /* 7. Our gallery */
 .our_gallery {
@@ -632,7 +682,7 @@ p {
   margin: auto; }
   .our_gallery .gallery_img {
     width: 100%;
-    margin-top: 55px; }
+    padding: 50px 0px 50px; }
     .our_gallery .gallery_img .galery_item {
       float: left;
       height: auto;
@@ -642,90 +692,95 @@ p {
         width: 100%; }
 
 /* 8. Our pricing */
-.our_pricing .price_list {
-  text-align: center; }
-  .our_pricing .price_list .man_price {
-    display: inline-block;
-    margin: 60px 15px 150px 15px; }
-    .our_pricing .price_list .man_price .man_title {
-      text-align: center;
-      font-family: "Merriweather", serif;
-      font-size: 30px;
-      font-weight: 400;
-      color: #fff;
-      background-color: #303030;
-      padding: 27px 142px; }
-    .our_pricing .price_list .man_price .service_list_man {
-      width: 360px;
-      font-family: "Quattrocento Sans", sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      padding: 40px 18px 0px 20px;
-      border-left: 1px solid #c6c6c6;
-      border-right: 1px solid #c6c6c6; }
-      .our_pricing .price_list .man_price .service_list_man ul {
-        list-style-type: none; }
-        .our_pricing .price_list .man_price .service_list_man ul li {
-          margin-bottom: 20px;
-          text-align: left; }
-          .our_pricing .price_list .man_price .service_list_man ul li .name_service {
-            display: inline-block; }
-          .our_pricing .price_list .man_price .service_list_man ul li .service_price {
-            display: inline-block;
-            float: right; }
-    .our_pricing .price_list .man_price button {
-      border: none;
-      padding: 0; }
-      .our_pricing .price_list .man_price button a {
+.our_pricing {
+  padding-bottom: 100px; }
+  .our_pricing .price_list {
+    text-align: center; }
+    .our_pricing .price_list .man_price {
+      margin: 60px 0px; }
+      .our_pricing .price_list .man_price .man_title {
+        text-align: center;
+        font-family: "Merriweather", serif;
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #303030;
+        padding: 10px 0; }
+      .our_pricing .price_list .man_price .service_list_man {
+        width: auto;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        border-left: 1px solid #c6c6c6;
+        border-right: 1px solid #c6c6c6; }
+        .our_pricing .price_list .man_price .service_list_man ul {
+          list-style-type: none; }
+          .our_pricing .price_list .man_price .service_list_man ul li {
+            margin-bottom: 20px;
+            padding: 0px 10px;
+            text-align: left; }
+            .our_pricing .price_list .man_price .service_list_man ul li:first-child {
+              padding-top: 30px; }
+            .our_pricing .price_list .man_price .service_list_man ul li:last-child {
+              margin-bottom: 0; }
+            .our_pricing .price_list .man_price .service_list_man ul li .name_service {
+              display: inline-block; }
+            .our_pricing .price_list .man_price .service_list_man ul li .service_price {
+              display: inline-block;
+              float: right; }
+      .our_pricing .price_list .man_price a {
         background-color: #303030;
         text-transform: uppercase;
         font-family: "Merriweather", serif;
         font-size: 18px;
         color: #fff;
-        padding: 20px 110px; }
-        .our_pricing .price_list .man_price button a:hover {
+        display: block;
+        padding: 10px 0px; }
+        .our_pricing .price_list .man_price a:hover {
           text-decoration: none; }
-  .our_pricing .price_list .woman_price {
-    display: inline-block;
-    margin: 60px 15px 150px 15px; }
-    .our_pricing .price_list .woman_price .woman_title {
-      text-align: center;
-      font-family: "Merriweather", serif;
-      font-size: 30px;
-      font-weight: 400;
-      color: #fff;
-      background-color: #995437;
-      padding: 27px 116px; }
-    .our_pricing .price_list .woman_price .service_list_woman {
-      width: 360px;
-      font-family: "Quattrocento Sans", sans-serif;
-      font-size: 18px;
-      line-height: 30px;
-      padding: 40px 18px 0px 20px;
-      border-left: 1px solid #c6c6c6;
-      border-right: 1px solid #c6c6c6; }
-      .our_pricing .price_list .woman_price .service_list_woman ul {
-        list-style-type: none; }
-        .our_pricing .price_list .woman_price .service_list_woman ul li {
-          margin-bottom: 20px;
-          text-align: left; }
-          .our_pricing .price_list .woman_price .service_list_woman ul li .name_service {
-            display: inline-block;
-            text-align: left; }
-          .our_pricing .price_list .woman_price .service_list_woman ul li .service_price {
-            display: inline-block;
-            float: right; }
-    .our_pricing .price_list .woman_price button {
-      border: none;
-      padding: 0; }
-      .our_pricing .price_list .woman_price button a {
+    .our_pricing .price_list .woman_price {
+      margin: 60px 0px; }
+      .our_pricing .price_list .woman_price .woman_title {
+        text-align: center;
+        font-family: "Merriweather", serif;
+        font-size: 30px;
+        font-weight: 400;
+        color: #fff;
+        background-color: #995437;
+        width: auto;
+        padding: 10px 0px; }
+      .our_pricing .price_list .woman_price .service_list_woman {
+        width: auto;
+        font-family: "Quattrocento Sans", sans-serif;
+        font-size: 18px;
+        line-height: 30px;
+        border-left: 1px solid #c6c6c6;
+        border-right: 1px solid #c6c6c6; }
+        .our_pricing .price_list .woman_price .service_list_woman ul {
+          list-style-type: none; }
+          .our_pricing .price_list .woman_price .service_list_woman ul li {
+            margin-bottom: 20px;
+            text-align: left;
+            padding: 0px 10px; }
+            .our_pricing .price_list .woman_price .service_list_woman ul li:first-child {
+              padding-top: 30px; }
+            .our_pricing .price_list .woman_price .service_list_woman ul li:last-child {
+              margin-bottom: 0; }
+            .our_pricing .price_list .woman_price .service_list_woman ul li .name_service {
+              display: inline-block;
+              text-align: left; }
+            .our_pricing .price_list .woman_price .service_list_woman ul li .service_price {
+              display: inline-block;
+              float: right; }
+      .our_pricing .price_list .woman_price a {
         background-color: #995437;
         text-transform: uppercase;
         font-family: "Merriweather", serif;
         font-size: 18px;
         color: #fff;
-        padding: 20px 110px; }
-        .our_pricing .price_list .woman_price button a:hover {
+        display: block;
+        padding: 10px 0px; }
+        .our_pricing .price_list .woman_price a:hover {
           text-decoration: none; }
 
 /* 9. Footer */
@@ -894,7 +949,8 @@ p {
   border-bottom: 1px solid #c1c1c1;
   color: #8f8f8f;
   padding: 10px 0px 40px 10px;
-  margin-top: 46px; }
+  margin-top: 46px;
+  margin-bottom: 40px; }
 
 #title_appointment_form *::-webkit-input-placeholder, .make_an_appointment #make_an_appointment_form *::-webkit-input-placeholder {
   color: #8f8f8f;
@@ -921,8 +977,9 @@ p {
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  section {
+    padding: 100px 0px 10px; }
   h2 {
-    padding-top: 100px;
     font-size: 28px; }
   /*header */
   .header_top ul {
@@ -950,19 +1007,21 @@ p {
         font-size: 20px; }
   .title .sub_head .menu ul li a {
     padding: 0px 14px; }
+  /* Carousel background resize */
+  .title .owl-carousel .item .carousel_img {
+    min-height: 894px; }
   /* Text in center of carousel */
-  .title .carousel .item .title_appointment .title_appointment_text {
-    font-size: 55px;
-    line-height: 65px;
-    width: 340px; }
+  .title .owl-carousel .item .title_appointment {
+    top: 25%; }
+  .title .owl-carousel .item .title_appointment .title_appointment_text {
+    font-size: 65px; }
   /* Carousel navigation button */
-  .title .carousel .owl-next {
-    right: -10%; }
-  .title .carousel .owl-prev {
-    left: -10%; }
+  .title .owl-carousel .owl-next {
+    right: -15%; }
+  .title .owl-carousel .owl-prev {
+    left: -15%; }
   /* Button in carousel */
-  .title .carousel .item .title_appointment button a {
-    top: 220px;
+  .title .owl-carousel .item .title_appointment a {
     padding: 20px 18px; }
   /* Second section about us */
   .about_us .about_us_icon_container .col-md-4 p {
@@ -1024,8 +1083,12 @@ p {
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   /**/
+  section {
+    padding: 50px 0px 10px; }
   h2 {
-    padding-top: 50px; }
+    font-size: 25; }
+  p {
+    font-size: 18px; }
   .header_top ul li {
     font-size: 13px; }
     .header_top ul li:first-child {
@@ -1054,24 +1117,17 @@ p {
       font-size: 15px; }
     .title .sub_head .menu ul li:hover {
       line-height: 68px; }
-  .title .carousel .owl-buttons {
-    font-size: 30px; }
-  .title .carousel .owl-prev {
-    width: 51px;
-    height: 51px; }
-  .title .carousel .owl-next {
-    width: 51px;
-    height: 51px; }
-  .title .carousel .item .title_appointment {
+  .title .owl-carousel .item .carousel_img {
+    min-height: 794px; }
+  .title .owl-carousel .owl-next,
+  .title .owl-carousel .owl-prev {
+    visibility: hidden; }
+  .title .owl-carousel .owl-dots {
+    display: block; }
+  .title .owl-carousel .item .title_appointment {
     left: 17%; }
-  .title .carousel .item .title_appointment .title_appointment_text {
-    font-size: 40px;
-    line-height: 50px;
-    width: 260px; }
-  .title .carousel .item .title_appointment button a {
-    top: 150px;
-    padding: 12px 11px;
-    font-size: 20px; }
+  .title .owl-carousel .item .title_appointment .title_appointment_text {
+    font-size: 60px; }
   /* Section about, about buttom */
   .about_us .about_buttom {
     padding-bottom: 40px; }
@@ -1080,7 +1136,7 @@ p {
   #title_appointment_form input[id="datepicker"], .make_an_appointment #make_an_appointment_form input[id="datepicker"],
   #title_appointment_form select, .make_an_appointment #make_an_appointment_form select {
     margin-top: 20px; }
-  .make_an_appointment button a {
+  .make_an_appointment a {
     padding: 12px 11px;
     font-size: 20px; }
   /* Section Barber */
@@ -1090,10 +1146,15 @@ p {
       width: 50%;
       height: 50%; }
   /* Section our clients say */
-  .our_clients_say .carousel .client_item p {
-    padding: 0px 50px;
+  .our_clients_say .owl-carousel .client_item p {
+    padding: 0px 10px;
     width: auto;
     font-size: 16px; }
+  .our_clients_say .owl-carousel .owl-next,
+  .our_clients_say .owl-carousel .owl-prev {
+    visibility: hidden; }
+  .our_clients_say .owl-carousel .owl-dots {
+    display: block; }
   /* Section gallery */
   .our_gallery .gallery_img .galery_item {
     width: 50%; }
@@ -1160,12 +1221,21 @@ p {
     .title .sub_head .menu ul.is-active li {
       display: block;
       line-height: 50px; }
-  .title .carousel .owl-buttons {
+  /* Carousel options */
+  .title .owl-carousel .item .title_appointment .title_appointment_text {
+    font-size: 50px;
+    line-height: 60px;
+    width: 356px; }
+  .title .owl-carousel .item .title_appointment a {
+    top: 200px; }
+  .title .owl-carousel .item .carousel_img {
+    min-height: 694px; }
+  .title .owl-carousel .owl-buttons {
     font-size: 25px; }
-  .title .carousel .owl-prev {
+  .title .owl-carousel .owl-prev {
     width: 45px;
     height: 45px; }
-  .title .carousel .owl-next {
+  .title .owl-carousel .owl-next {
     width: 45px;
     height: 45px; }
   .hamburger:before {
@@ -1206,10 +1276,9 @@ p {
         -ms-transform: translateY(-10px) rotate(45deg);
             transform: translateY(-10px) rotate(45deg); }
   /* Carousel navigation button */
-  .our_clients_say .carousel .owl-prev {
-    left: -15%; }
-  .our_clients_say .carousel .owl-next {
-    right: -15%; }
+  .our_clients_say .owl-carousel .owl-prev,
+  .our_clients_say .owl-carousel .owl-next {
+    visibility: hidden; }
   /* footer */
   .footer_buttom .copyright {
     font-size: 15px; } }
@@ -1221,37 +1290,52 @@ p {
   .header_top ul li:nth-child(3),
   .header_top ul li:last-child {
     display: none; }
-  .title .carousel .item .title_appointment .title_appointment_text {
-    font-size: 30px;
-    line-height: 35px;
+  .title .owl-carousel .item .title_appointment .title_appointment_text {
+    font-size: 40px;
+    line-height: 55px;
     width: 180px; }
-  .title .carousel .item .title_appointment button a {
-    top: 110px;
-    padding: 8px 6px;
-    font-size: 15px; }
+  .title .owl-carousel .item .carousel_img {
+    min-height: 594px; }
+  .title .owl-carousel .item .title_appointment a {
+    padding: 12px 12px;
+    font-size: 20px;
+    width: 220px; }
   /* Section pricing */
+  .our_pricing .price_list .man_price .man_title {
+    padding: 10px 0px;
+    width: auto; }
   .our_pricing .price_list .man_price .service_list_man {
     width: auto; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   /**/
-  .title .carousel .item .title_appointment .title_appointment_text {
-    font-size: 25px;
-    line-height: 30px;
+  .title .owl-carousel .item .title_appointment {
+    top: 40%; }
+  .title .owl-carousel .item .title_appointment .title_appointment_text {
+    font-size: 30px;
+    line-height: 35px;
     width: 180px; }
-  .title .carousel .item .title_appointment button a {
-    top: 90px;
-    padding: 6px 4px;
-    font-size: 12px; }
-  .title .carousel .owl-buttons {
+  .title .owl-carousel .item .carousel_img {
+    min-height: 494px; }
+  .title .owl-carousel .item .title_appointment a {
+    top: 135px;
+    padding: 8px 10px;
+    font-size: 18px; }
+  #title_appointment_form a,
+  .make_an_appointment #make_an_appointment_form a {
+    font-size: 20px;
+    padding: 10px 10px; }
+  .title .owl-carousel .owl-buttons {
     font-size: 20px; }
-  .title .carousel .owl-prev {
+  .title .owl-carousel .owl-prev {
     width: 40px;
-    height: 40px; }
-  .title .carousel .owl-next {
+    height: 40px;
+    left: -15%; }
+  .title .owl-carousel .owl-next {
     width: 40px;
-    height: 40px; } }
+    height: 40px;
+    right: -15%; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {

@@ -1,10 +1,13 @@
 $(function(){
-	
-//Подключаем карусель
-$('.carousel').owlCarousel({
-  singleItem: true,
-  navigation: true,
-  navigationText : false,
+
+//Connecting carousel
+$('.owl-carousel').owlCarousel({
+	loop:true,
+	nav: true,
+	navText: false,
+	items: 1,
+	dotsEach: true,
+
  });
 
 $('.hamburger').click(function(){
@@ -51,3 +54,9 @@ $('.popup-with-form').magnificPopup({
 
 
 });
+$(window).on('load', function () {
+    $preloader = $('.loaderArea'),
+      $loader = $preloader.find('.loader');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });
