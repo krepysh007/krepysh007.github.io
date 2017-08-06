@@ -1,0 +1,884 @@
+
+@import "vars"
+
+/* Template: Barber
+	Made by Anton Knyazev
+	Barber includes:
+	1. Title section
+	2. About us
+	3. Our services
+	4. Make an appointment
+	5. Our Barbers
+	6. Our clients say
+	7. Our gallery
+	8. Our pricing
+	9. Footer 
+
+ */
+ /* reser chrome user styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, nav, section, 
+time, mark, audio, video
+	-webkit-margin-before: 0px
+	-webkit-margin-after: 0px
+	-webkit-margin-start: 0px
+	-webkit-margin-end: 0px
+	-webkit-padding-start: 0px
+
+.container
+	margin: 0 auto
+/* Preloader on page */	
+.loaderArea
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+h2
+	color: $black_color
+	font-family: $font_merriweather
+	font-size: 36px
+	text-transform: uppercase
+	text-align: center
+
+
+section
+	padding: 148px 0px 10px
+
+p
+	font-family: $font_quatro
+	font-size: 20px
+	color: $p_color
+	line-height: 30px
+	letter-spacing: 0.025em
+	width: 558px 
+	margin: 30px auto 0 
+	text-align: center
+/* icon after h2 */	
+.mustahe
+	margin: 0 auto
+	width: 305px
+	height: 18px
+	background-image: url("../img/css_sprites.png")
+	background-position: -254px -10px
+
+ 
+  /* 1.Title section */
+.header_top
+	
+	background-color: #fff
+	ul
+		list-style: none
+		display: inline-block
+		margin: 0
+		padding-left: 0
+		line-height: 100px
+
+	  
+		li
+			display: inline-block
+			font-family: $font_quatro
+			font-weight: 700
+			line-height: 24px
+			font-size: 16px
+			letter-spacing: 0.025em
+			color: #454545
+			position: relative
+			vertical-align: middle
+
+			&:first-child
+				margin-left: 140px
+				width: 165px 
+				&::before
+					content: "\f095"
+					font-family: 'FontAwesome'				
+					font-size: 24px
+					position: absolute
+					top: 13px
+					left: -34px
+					color: $main_color
+				
+						
+
+			&:nth-child(2)
+				margin-left: 84px
+				width: 225px
+				&::before
+					content: "\f041"
+					font-family: 'FontAwesome'
+					font-size: 24px
+					position: absolute
+					top: 13px
+					left: -34px
+					color: $main_color
+
+			&:nth-child(3)
+				margin-left: 92px
+				width: 93px
+				&::before
+					content: "\f017"
+					font-family: 'FontAwesome'
+					font-size: 24px
+					position: absolute
+					top: 13px
+					left: -34px
+					color: $main_color
+			&:last-child
+				margin-left: 190px
+				&::before
+					content: "\f002"
+					font-family: 'FontAwesome'
+					font-size: 20px
+
+
+
+			
+			
+
+	.logo
+		display: inline-block
+		float: left
+		a
+			font-family: $font_merriweather
+			font-size: 30px
+			line-height: 100px
+			letter-spacing: 0.025em
+			color: $main_color
+			font-weight: 700
+			text-decoration: none
+			display: inline-block
+
+.title
+	padding-top: 0px
+	.sub_head
+		background-color: rgba(0, 0, 0, 0.251)
+		border-top: 1px solid #bfbfbf
+		position: absolute
+		top: 100px
+		left: 0
+		width: 100%
+		z-index: 210 
+		box-sizing: content-box
+
+		.menu
+			float: right
+			ul
+				list-style: none
+				display: inline-block
+				margin: 0
+				padding-left: 0 
+
+				li
+					text-transform: uppercase
+					display: inline-block
+					line-height: 99px
+					border-bottom: 2px solid transparent
+
+					a
+						text-decoration: none
+						color: #e8e6e6
+						font-family: $font_quatro
+						font-size: 20px
+						font-weight: 700
+						padding: 0px 25px
+					&:hover
+						background-color: rgba(153, 84, 55, 0.7)
+						border-bottom: 2px solid #995437
+						line-height: 97px
+			.hamburger .line
+				width: 30px
+				height: 3px
+				background-color: #ecf0f1
+				margin: 6px auto
+				transition: all 0.3s ease-in-out
+				display: none
+			&:hover
+				cursor: pointer 
+ /* carousel */
+	.owl-carousel
+		position: relative 
+		overflow: hidden
+		&:hover .owl-prev
+			left: 1%
+			transition: all 0.3s ease-in-out
+			display: block
+		&:hover .owl-next
+			right: 1%
+			transition: all 0.3s ease-in-out
+			display: block 
+
+		.owl-buttons
+			font-size: 40px
+			color: $main_color 
+			border-radius: 50%
+		.item
+			.carousel_img 
+				background-image: url("../img/title_bg.jpg")
+				background-size: cover
+				background-position: center center
+				min-height: 984px
+			.title_appointment
+				position: absolute
+				top: 35%
+				left: 20.4%
+				.title_appointment_text
+					font-size: 72px
+					font-family: $font_merriweather
+					line-height: 95px
+					font-weight: 700
+					text-transform: uppercase
+					color: #fff
+					width: 420px
+					span 
+						color: $main_color
+				a
+					text-decoration: none
+					position: absolute
+					color: #fff
+					font-family: $font_quatro
+					font-size: 30px
+					border: 1px solid $main_color
+					padding: 23px 20px
+					top: 300px
+					left: 0%
+					&:hover
+						background-color: $main_color
+		/* Code for navigation arrows */
+		.owl-prev 
+			position: absolute
+			top: 52%
+			left: -5% 
+			border-radius: 50%
+			width: 61px
+			height: 61px
+			border: 2px solid $main_color
+			text-align: center
+			
+			&:hover
+				background-color: $main_color 
+				color: #fff
+	
+			&:before
+				content: "\f104"
+				font-family: 'FontAwesome'
+				font-size: 40px
+
+				
+		.owl-next
+			position: absolute
+			top: 52%
+			right: -5%
+			border-radius: 50%
+			width: 61px
+			height: 61px
+			border: 2px solid $main_color
+			
+			
+			
+			&:hover
+				background-color: $main_color
+				color: #fff
+			&:before 
+				content: "\f105"
+				font-family: 'FontAwesome'
+				font-size: 40px
+				
+
+		.owl-dots
+			position: absolute
+			bottom: 20px
+			left: 49%
+			display: none
+/* form with appointment */
+#title_appointment_form
+	min-height: 1006px
+	background-image: url("../img/make_in_appointment_bg.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+	h2
+		color: #fff
+	p 
+		color: #c0c0c0
+	@extend %form
+	a
+		margin-top: 40px
+		text-decoration: none
+		color: #fff
+		font-family: $font_quatro
+		font-size: 30px
+		padding: 23px 20px
+		border: 2px solid #6e331a
+		background-color: $main_color
+		&:hover 
+			background-color: #fff		
+			color: $main_color
+/* 2. About us */
+.about_us
+	
+	.about_us_icon_container 
+		.icon_border
+			width: 100%
+			height: 330px
+			border: 1px solid #d5d3d3
+			text-align: center
+			margin-top: 114px
+			transition: all 5s ease
+			
+			&:hover
+				background-color: $main_color
+				transform: rotateY(180deg)
+				animation: one 3s infinite
+				animation-direction: alternate
+				animation-iteration-count: 1
+				h3,p
+					color: #fff
+					transform: rotateY(180deg)
+					transition: all 3s ease 
+
+				.icon_line
+					background-color: #fff
+					transition: all 3s ease	
+
+
+		.col-md-4:first-child .icon_img
+			width: 102px
+			height: 102px
+			margin: -51px auto 0px
+			background-image: url("../img/css_sprites.png")
+			background-position: -10px -10px
+		.col-md-4:nth-child(2) .icon_img
+			width: 102px
+			height: 102px
+			margin: -51px auto 0px
+			background-image: url("../img/css_sprites.png")
+			background-position: -132px -10px
+		.col-md-4:nth-child(3) .icon_img
+			width: 102px
+			height: 102px
+			margin: -51px auto 0px
+			background-image: url("../img/css_sprites.png")
+			background-position: -10px -132px
+		.col-md-4
+			p
+				width: 315px
+				font-size: 18px
+				transition: all 3s ease
+
+			h3 
+				font-family: $font_merriweather
+				padding-top: 10px
+				transition: all 3s ease
+			.icon_line
+				width: 97px
+				height: 2px
+				background-color: $main_color
+				margin: 10px auto 10px
+				transition: all 5s ease
+			
+	.about_buttom
+		background-image: url("../img/about_buttom_bg.jpg")
+		background-position: top center
+		background-size: cover
+		min-height: 209px
+		margin-top: 150px
+		text-align: center
+		.numbers
+			font-size: 60px
+			color: $main_color
+			font-family: $font_merriweather
+			font-weight: 900
+			margin-top: 62px
+		.number_text
+			color: #fff
+			text-transform: uppercase
+			font-family: $font_quatro
+			font-weight: 700
+
+@keyframes one
+	0%
+		transform: rotateY(0deg)
+	100%
+		transform: rotateY(180deg) 
+/* 3. Our servises */
+.our_services
+	background-image: url("../img/service_man.png")
+	min-height: 1319px
+	background-position: top center
+	.service_man
+		position: relative
+		.service_name
+			h3
+				text-align: right
+			p
+				text-align: right
+				width: 390px
+
+			&:first-child 
+				position: absolute
+				left: 154px
+				top: 190px
+				
+	
+				.service_img 
+					background-image: url("../img/css_sprites.png")
+					width: 90px
+					height: 90px
+					background-position: -254px -48px
+					position: absolute
+					top: 15%
+					left: 400px  
+
+
+				
+			&:nth-child(2) 
+				position: absolute
+				left: 154px
+				top: 490px
+				.service_img
+					background-image: url("../img/css_sprites.png")
+					width: 90px
+					height: 90px
+					background-position: -132px -132px
+					position: absolute
+					top: 15%
+					left: 400px 
+			&:nth-child(3)
+				position: absolute
+				right: 154px
+				top: 190px
+				h3,p
+					text-align: left
+				.service_img
+					background-image: url("../img/css_sprites.png")
+					width: 90px
+					height: 90px
+					background-position: -364px -48px
+					position: absolute
+					top: 15%
+					right: 400px  	
+			&:nth-child(4) 
+				position: absolute
+				right: 154px
+				top: 490px  
+				h3,p
+					text-align: left
+				.service_img
+					background-image: url("../img/css_sprites.png")
+					width: 90px
+					height: 90px
+					background-position: -10px -254px
+					position: absolute
+					top: 15%
+					right: 400px 
+
+/* 4. Make an appointment */
+.make_an_appointment
+	min-height: 1006px
+	background-image: url("../img/make_in_appointment_bg.jpg")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: top center
+	h2
+		color: #fff
+	p 
+		color: #c0c0c0
+	#make_an_appointment_form
+		margin-top: 20px
+		@extend %form
+
+		a
+			
+			text-decoration: none
+			color: #fff
+			font-family: $font_quatro
+			font-size: 30px
+			padding: 23px 20px
+			border: 2px solid #6e331a
+			background-color: $main_color
+			&:hover
+				background-color: #fff		
+				color: $main_color
+
+ 
+/* 5. Our Barbers */					
+.our_barbers
+	.barber_container
+		.barber_img
+			margin-top: 60px
+
+		h3
+			text-align: center	
+			margin-top: 30px
+		p
+			width: auto		
+		.barber_rate
+			text-align: center
+			color: $main_color
+			font-size: 18px
+/* 6. Our client say */		
+.our_clients_say
+	background-image: url("../img/client_say_bg.jpg")	
+	background-size: cover
+	background-position: top center
+	min-height: 870px
+	margin-top: 150px
+	h2
+		color: #fff
+	p
+		color: #c0c0c0
+	
+	.owl-carousel
+		position: relative 
+		overflow: hidden
+		&:hover .owl-prev
+			left: 1%
+			transition: all 0.3s ease-in-out
+			display: block
+		&:hover .owl-next
+			right: 1%
+			transition: all 0.3s ease-in-out
+			display: block 
+
+		.owl-buttons
+			font-size: 20px
+			color: $main_color 
+			border-radius: 50%
+		.client_item
+			margin-top: 40px
+			text-align: center
+			.client_say_rate
+				color: $main_color
+				font-size: 18px
+			p
+				width: 790px
+				font-size: 18px
+			.client_img
+				margin-top: 60px
+				img
+					width: auto
+					height: auto
+					margin: 0 auto
+
+				.client_name
+					color: #fff
+					font-family: $font_merriweather
+					margin-top: 20px
+
+		.owl-prev
+			position: absolute
+			top: 35%
+			left: -5%
+			border-radius: 50%
+			width: 31px
+			height: 31px
+			border: 2px solid $main_color
+			text-align: center
+			color: $main_color
+			&:hover
+				background-color: $main_color
+				color: #1d1817
+	
+			&:before
+				content: "\f104"
+				font-family: 'FontAwesome'
+				font-size: 20px
+				
+				
+		.owl-next
+			position: absolute
+			top: 35%
+			right: -5%
+			border-radius: 50%
+			width: 31px
+			height: 31px
+			border: 2px solid $main_color
+			text-align: center
+			color: $main_color
+			
+			vertical-align: middle
+			&:hover
+				background-color: $main_color
+				color: #1d1817
+			&:before
+				content: "\f105"
+				font-family: 'FontAwesome'
+				font-size: 20px
+				
+/* 7. Our gallery */
+.our_gallery	
+	width: 100%
+	margin: auto
+	.gallery_img
+		width: 100%
+		padding: 50px 0px 50px
+		.galery_item
+			float: left
+			height: auto
+			margin: 0
+			width: 20% 
+			img
+				width: 100%
+/* 8. Our pricing */	
+.our_pricing
+	padding-bottom: 100px
+	.price_list
+		text-align: center
+
+		.man_price
+			margin: 60px 0px
+			.man_title
+				text-align: center
+				font-family: $font_merriweather	
+				font-size: 30px
+				font-weight: 400
+				color: #fff
+				background-color: #303030
+				padding: 10px 0
+
+			.service_list_man
+				width: auto
+				font-family: $font_quatro
+				font-size: 18px
+				line-height: 30px
+				border-left: 1px solid #c6c6c6
+				border-right: 1px solid #c6c6c6
+				ul
+					list-style-type: none
+					li
+						margin-bottom: 20px
+						padding: 0px 10px
+						text-align: left
+						&:first-child
+							padding-top: 30px
+						&:last-child
+							margin-bottom: 0
+						.name_service
+							display: inline-block
+							
+
+						.service_price
+							display: inline-block
+							float: right
+	
+			a
+				background-color: #303030
+				text-transform: uppercase
+				font-family: $font_merriweather	
+				font-size: 18px
+				color: #fff
+				display: block
+				padding: 10px 0px
+				&:hover
+					text-decoration: none
+
+		.woman_price
+			
+			margin: 60px 0px
+			.woman_title
+				text-align: center
+				font-family: $font_merriweather	
+				font-size: 30px
+				font-weight: 400
+				color: #fff
+				background-color: #995437
+				width: auto
+				padding: 10px 0px
+ 
+			.service_list_woman
+				width: auto
+				font-family: $font_quatro
+				font-size: 18px
+				line-height: 30px
+				border-left: 1px solid #c6c6c6
+				border-right: 1px solid #c6c6c6
+				ul
+					list-style-type: none
+					li
+						margin-bottom: 20px
+						text-align: left
+						padding: 0px 10px
+						&:first-child
+							padding-top: 30px
+						&:last-child
+							margin-bottom: 0
+						.name_service
+							display: inline-block
+							text-align: left
+
+						.service_price
+							display: inline-block
+							float: right
+
+			a
+				background-color: #995437
+				text-transform: uppercase
+				font-family: $font_merriweather	
+				font-size: 18px
+				color: #fff
+				display: block
+				padding: 10px 0px
+				&:hover
+					text-decoration: none
+	 
+/* 9. Footer */
+.footer_main
+	background-image: url("../img/footer_bg.jpg")
+	background-size: cover
+	min-height: 620px
+
+	h3
+		font-family: $font_merriweather
+		font-size: 20px
+		color: $main_color
+		text-transform: uppercase
+		font-weight: 700
+		margin-top: 150px
+	.subscribe_text
+		width: 233px
+		font-size: 18px
+		line-height: 24px
+		text-align: left 
+		color: #f2f2f2
+		font-family: $font_quatro
+		margin-top: 70px
+	.subscribe_form
+		margin-top: 47px
+		.subscribe_email
+			padding-left: 20px
+			height: 53px
+			border: 1px solid #a7a7a7
+		.subscribe_button
+			font-size: 18px
+			background-color: $main_color
+			border: none
+			height: 53px
+			width: 53px
+			position: absolute
+			overflow: hidden
+			.fa-paper-plane
+				color: #fff
+
+		&:hover .fa-paper-plane
+			transform: translateX(40px) translateY(-40px)
+			transition: all 0.3s ease 0.2s
+
+			
+
+
+	.footer_working_hours
+		h3
+			text-align: center
+		ul
+			text-transform: uppercase
+			list-style: none 
+			margin-top: 70px
+			color: #f2f2f2
+			font-family: $font_quatro
+			margin-top: 70px
+			padding: 0 20px
+			li
+				margin-top: 20px
+				span
+					float: right
+	.footer_blog
+		h3
+			text-align: center
+		.blog_container
+			margin-top: 70px 
+			.article_title
+				font-family: $font_quatro
+				font-size: 18px
+				color: $main_color
+
+			.article_p
+				margin: 25px 0
+				color: #f2f2f2
+				font-size: 14px
+	.footer_instagram
+		h3
+			text-align: right
+		.inst_list
+			margin-top: 70px
+			text-align: right
+			a
+				margin-left: 15px
+				&:nth-child(n+4) img
+					margin-top: 15px
+/* footer copyright with social icons */
+.footer_buttom
+	padding: 25px 0px
+	background-color: #000
+	color: #fff	
+	line-height: 88px
+
+	.copyright
+		font-family: $font_quatro
+		font-size: 24px
+		display: inline-block
+		
+	/* social icons */
+	.social
+		display: inline-block
+		float: right
+		ul
+			list-style: none
+			
+			li	 
+				display: inline-block
+				a
+					color: #fff
+					width: 39px
+					height: 39px
+					display: block
+					border: 1px solid #fff
+					text-align: center
+					line-height: 39px
+					font-size: 24px
+					margin-right: 8px
+/* button top*/					
+#btn_top
+	color: #fff
+	font-size: 40px
+	position: fixed
+	bottom: 50px
+	right: 50px
+	z-index: 20
+	background-color: $main_color
+	width: 50px
+	height: 50px
+	border-radius: 50%
+	display: inline-block
+	text-align: center
+	line-height: 50px  
+.fa-angle-double-up:before
+	color: #fff
+ 
+ 
+@import "media"
