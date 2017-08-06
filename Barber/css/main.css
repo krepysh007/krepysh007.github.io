@@ -312,7 +312,8 @@ p {
       width: 61px;
       height: 61px;
       border: 2px solid #985336;
-      text-align: center; }
+      text-align: center;
+      line-height: 51px; }
       .title .owl-carousel .owl-prev:hover {
         background-color: #985336;
         color: #fff; }
@@ -328,7 +329,8 @@ p {
               border-radius: 50%;
       width: 61px;
       height: 61px;
-      border: 2px solid #985336; }
+      border: 2px solid #985336;
+      line-height: 51px; }
       .title .owl-carousel .owl-next:hover {
         background-color: #985336;
         color: #fff; }
@@ -648,7 +650,8 @@ p {
       height: 31px;
       border: 2px solid #985336;
       text-align: center;
-      color: #985336; }
+      color: #985336;
+      line-height: 21px; }
       .our_clients_say .owl-carousel .owl-prev:hover {
         background-color: #985336;
         color: #1d1817; }
@@ -667,6 +670,7 @@ p {
       border: 2px solid #985336;
       text-align: center;
       color: #985336;
+      line-height: 21px;
       vertical-align: middle; }
       .our_clients_say .owl-carousel .owl-next:hover {
         background-color: #985336;
@@ -675,6 +679,8 @@ p {
         content: "\f105";
         font-family: 'FontAwesome';
         font-size: 20px; }
+    .our_clients_say .owl-carousel .owl-dots {
+      display: none; }
 
 /* 7. Our gallery */
 .our_gallery {
