@@ -1,0 +1,53 @@
+@media only screen and (max-width: 998px) {
+	.box_3 .items {
+		display: block;
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width: 640px){
+	.btn{
+		display: block;
+	}
+	.menu ul {
+		display: none;
+		background-color: #f7fdfe;
+		padding-bottom:20px;
+		position: absolute;
+		left:0;
+		right: 0;
+		text-align: center;
+
+	}
+	.menu li {
+		display: block;
+		padding:0;
+	}
+	.menu li:nth-child(3){
+	padding-right: 0px;
+} 
+	.menu a {
+		display:block;
+		transition: all .3s;
+	}
+	.menu a:hover {
+		background-color: #ddd;
+
+	}
+	.menu li:last-child a{
+		display: inline-block;
+	}
+}
+@media only screen and (min-width: 640px) {
+	.menu ul {
+		display: block !important;
+	}
+}
+@media only screen and (max-width: 320px) {
+.head_text {
+	padding-top: 280px;
+}
+.text {
+	font-size: 16px;
+}
+}

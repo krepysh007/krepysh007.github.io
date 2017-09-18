@@ -1,0 +1,511 @@
+@import "vars"
+
+*::-webkit-input-placeholder 
+	color: #666
+	opacity: 1
+	padding-left: 10px
+*:-moz-placeholder 
+	color: #666
+	opacity: 1
+	padding-left: 10px
+*::-moz-placeholder 
+	color: #666
+	opacity: 1
+	padding-left: 10px
+*:-ms-input-placeholder 
+	color: #666
+	opacity: 1
+	padding-left: 10px
+body input:focus:required:invalid
+	border: 3px solid $color_red
+body input:required:valid
+	border: 3px solid $color_green
+
+
+body
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
+	a:hover
+		text-decoration: none
+.header
+	background-image: url("../img/fon.jpg")
+	min-height: 640px
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top center
+	.top_header
+		padding-top: 34px 
+	.logo
+		display: inline-block
+		a
+			color: #fff
+			transition-decoration: none
+			font-weight: 700
+			font-size: 40px
+			line-height: 58px
+	.phone
+		float: right
+		.tabs
+			text-align: right
+			color: #fff
+		.tab
+			text-transform: uppercase
+			font-size: 16px
+			cursor: pointer
+			&.active
+				text-decoration: underline
+		.tab-item
+			color: #fff
+			font-weight: 700
+			font-size: 35px
+			display: none
+			&:first-child
+				display: block
+	.header_content
+		padding-top: 70px
+		h1
+			color: #fff
+			line-height: 56px
+			font-family: $font
+			font-size: 56px 
+			font-weight: 300
+			margin: 0
+		h2
+			line-height: 56px
+			color: #fff
+			font-size: 35px
+			margin: 0
+			font-weight: 300
+			font-family: $font
+		.sale_box
+			padding-top: 35px
+			.tab
+				color: #fff
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 16px
+				background-color: rgba(#fff,.25)
+				padding: 0px 20px
+				line-height: 56px
+				display: block
+				float: left
+				cursor: pointer
+				&.active
+					color: #000
+					background-color: rgba(#fff,.6)
+			.tab-content
+				max-width: 635px
+				padding: 25px 0px 85px
+				background-color: rgba(#fff,.6)
+				position: relative
+			.tab-item
+				display: none
+				ul
+					margin: 0
+					padding: 0
+					list-style: none
+					li
+						text-transform: uppercase
+						padding-left: 80px
+						padding-bottom: 10px
+						font-weight: 700
+						font-size: 18px
+						position: relative
+						&::before
+							content: ''
+							position: absolute
+							background-image: url("../img/css_sprites.png")
+						&:first-child::before
+							width: 32px
+							height: 20px
+							background-position: -291px -135px
+							top: 10px
+							left: 25px
+						&:nth-child(2)::before
+							width: 24px
+							height: 18px
+							background-position: -369px -216px
+							top: 4px
+							left: 25px
+						&:last-child::before
+							width: 26px
+							height: 26px
+							background-position: -369px -170px
+							top: 0px
+							left: 25px
+
+				&:first-child
+					display: block
+			a.btn_red
+				color: #fff 
+				position: absolute
+				bottom: 20px
+				right: 25px
+				@extend %btn
+				background-color: $color_red
+.box_1
+	background: #c6d8ee;
+	background: -moz-linear-gradient(top, #c6d8ee 0%, #e8eff7 100%)
+	background: -webkit-linear-gradient(top, #c6d8ee 0%,#e8eff7 100%)
+	background: linear-gradient(to bottom, #c6d8ee 0%,#e8eff7 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c6d8ee', endColorstr='#e8eff7',GradientType=0 )
+	padding: 50px 0px 40px
+	.text
+		padding-left: 80px
+		font-family: $font
+		font-weight: 300
+		text-transform: uppercase
+		color: #1d4c7c
+		vertical-align: bottom
+		position: relative
+		box-sizing: content-box
+		&::before
+			content: ""
+			background-image: url("../img/css_sprites.png")
+			width: 63px
+			height: 55px
+			top: -16px
+			left: 0
+			background-position: -67px -255px 
+			position: absolute
+
+		.text_1
+			font-size: 14px
+		.text_2
+			font-size: 16px
+	.col-md-3:first-child 
+		.text
+			width: 110px
+
+		.text_1
+			font-size: 15px
+			line-height: 20px
+	.col-md-3:nth-child(2) 
+		.text
+			width: 140px
+		.text::before
+			width: 62px
+			height: 62px
+			left: 0
+			top: -16px
+			background-position: -129px -135px
+		.text_1
+			font-size: 11px
+	.col-md-3:nth-child(3)
+		.text
+			width: 180px 
+
+		.text::before
+			width: 51px
+			height: 66px
+			left: 0
+			top: -16px
+			background-position: -67px -330px
+			
+	.col-md-3:last-child 
+		.text
+			width: 173px
+		.text::before
+			left: 0
+			top: -13px
+			background-position: -211px -135px
+			width: 60px
+			height: 60px
+		.text_1
+			font-size: 10px
+			line-height: 27px
+		.text_2
+			font-size: 18px
+
+.box_2
+	padding: 50px 0px 75px
+	h3
+		font-size: 40px
+		color: #003469
+		text-align: center
+		font-family: $font
+		font-weight: 300
+		padding-bottom: 40px
+		text-transform: uppercase
+	.text_box_2
+		box-sizing: content-box
+		padding-left: 130px
+		padding-top: 15px
+		position: relative
+		&::before
+			content: ""
+			position: absolute
+			top: 60px
+			left: 0 
+			background-image: url("../img/css_sprites.png")
+			width: 99px
+			height: 100px
+			background-position: -10px -135px
+		&:nth-child(2)::before
+			background-position: -250px -10px
+		&:nth-child(3)
+			padding-top: 40px
+			&::before
+				top: 90px
+				width: 100px
+				height: 105px
+				background-position: -10px -10px
+
+		&:last-child
+			padding-top: 30px
+			&::before
+				top: 90px
+				width: 100px
+				height: 104px
+				background-position: -130px -10px
+
+
+		h4
+			font-family: $font
+			font-weight: 300
+			font-size: 25px
+			padding-bottom: 10px
+			color: $color_red 
+		p
+			margin: 0
+			font-size: 16px
+			color: #333
+
+	#form_green
+		border-radius: 5px
+		border: 5px solid $color_green
+		background-color: #f7f7f7
+		text-align: center
+		.form-text
+			padding: 25px 0
+			color: #444
+			font-size: 22px
+			font-weight: 700
+			
+		p
+			margin: 0
+			padding-left: 30px
+			font-size: 14px
+			color: #666
+			padding-bottom: 5px
+			text-align: left
+		input
+			margin: 0 auto 10px
+			width: 90%
+			outline: none
+			height: 43px
+			font-size: 20px
+		select
+			font-size: 20px
+			width: 90%
+			color: #666
+			height: 43px
+			outline: none
+		button
+			color: #fff
+			margin: 36px 0px 46px
+			background-color: $color_green
+			@extend %btn
+			border: none
+.box_3
+	.feedback 
+		background-image: url("../img/carousel_fon.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: top center
+		min-height: 620px
+		.feedback_top	
+			h3
+				font-size: 50px
+				color: #fff
+				line-height: 56px
+				font-family: $font
+				padding: 67px 0px 73px
+				font-weight: 300
+				text-align: center
+			.carousel
+				text-align: center
+				position: relative
+				color: #fff
+
+				.owl-prev
+					position: absolute
+					left: 0%
+					top: 25%
+				.owl-next
+					position: absolute
+					right: 0%
+					top: 25%					
+
+				.name
+					font-size: 22px
+					line-height: 56px
+					font-style: italic
+				.line
+					height: 1px 
+					width: 80px
+					background-color: #cea380
+					margin: 0 auto
+				.name_feedback
+					width: 730px
+					text-align: center
+					margin: 0 auto 74px
+					padding-top: 20px
+					font-size: 15px
+					line-height: 24px
+		.feedback_buttom
+			background-image: url("../img/flag.jpg")
+			background-repeat: no-repeat
+			background-size: cover
+			background-position: top center
+			min-height: 235px
+			text-align: center
+			.text_buttom
+				color: #fff 
+				text-transform: uppercase
+				padding: 12px 0px 20px
+				font-size: 26px
+				line-height: 36px
+				margin: 38px 0px 28px
+				background-color: rgba(255, 255, 255, 0.1)
+ 
+			
+			a.btn_white 
+				@extend %btn
+				background-color: #fff
+				color: #222
+.box_4
+	.col-md-12
+
+		background-color: #fff
+		text-align: center
+
+		.map_head
+			margin-top: 50px
+			line-height: 56px
+			.text
+				font-family: $font
+				font-size: 50px
+				display: inline-block
+				height: 56px
+				vertical-align: middle
+
+		
+			.tabs
+				display: inline-block
+				margin-left: 30px
+				text-transform: uppercase
+				font-size: 16px
+				color: #222
+				font-weight: 700
+				text-align: center
+				height: 56px
+				vertical-align: middle
+				
+
+				.tab
+					border: 5px solid #9b1818
+					line-height: 45px
+					padding: 0px 60px
+					display: block
+					float: left
+					&.active
+						color: #fff	
+						background-color: #9b1818
+		
+				&:first-child
+					display: block
+
+			
+	.tab-item
+		margin-top: 20px
+		display: none
+		text-align: center
+
+		.adress
+			font-size: 18px
+			line-height: 22px
+			color: #222
+		iframe
+			min-height: 496px
+			width: 100%
+			border: none
+			margin-top: 20px
+		&:first-child
+			display: block
+.footer
+	text-align: center
+	padding: 90px 0px 190px
+	h2
+		font-family: $font
+		line-height: 56px
+		margin: 0
+		text-transform: uppercase
+		font-weight: 400
+	p
+		font-size: 18px
+		line-height: 24px
+		text-transform: none
+		color: #333333 
+		margin-bottom: 0px
+
+	.phone_footer
+		padding-top: 64px
+		color: $color_red
+		.tab
+			text-transform: uppercase
+			&.active
+				text-decoration: underline
+
+		.tab-content
+			font-weight: 700
+			
+		.tab-item
+			line-height: 46px
+			display: none
+			&:first-child
+				display: block
+	a.btn_red
+		text-transform: uppercase
+		color: #fff
+		@extend %btn
+		background-color: $color_red	
+
+
+
+
+
+
+ 
+					
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#form-red
+	@extend %form
+#form-footer
+	@extend %form
+				
+
+
+
+
+
+
+
+
+
+
+@import "media"
