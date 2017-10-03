@@ -719,18 +719,18 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   .work {
-    height: 400px;
+    height: 450px;
   }
 }
 @media screen and (max-width: 480px) {
   .work {
-    height: 270px;
+    height: 350px;
   }
 }
 .work .desc {
   display: table-cell;
   vertical-align: middle;
-  height: 270px;
+  height: 350px;
   background: #fff;
   opacity: 0;
   -webkit-transition: 0.3s;
