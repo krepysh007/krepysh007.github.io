@@ -1,26 +1,133 @@
 @import "vars"
 
 /*==========  Desktop First  ==========*/
-/* Extra Large Devices, Wide Screens */
+
+/* Large Devices, Wide Screens */
 @media only screen and (max-width : 1400px)
-	/*Reset nagative margin*/
-	
+	//header
+	h1
+		font-size: 45px
+	.header .logo
+		line-height: 110px
+	.header .header-search span
+		width: 30px
+		height: 30px
+		top: 45px
+	.header .header-search input[type="text"]
+
+		height: 50px
+		font-size: 30px
+		margin-top: 33px
+	.header .header-search button
+		height: 50px
+		font-size: 24px
+	.header .time-frame #time-part
+		font-size: 36px	
+	/*section most visited*/
+	.most-visited .col-md-6 li span.visit-logo
+		width: 70px	
+		height: 70px 
+		line-height: 70px
+		font-size: 50px
+	.most-visited .col-md-6 li span.visit-title
+		padding-left: 10px
+		font-size: 18px
+		padding-top: 10px
+	.most-visited .col-md-6 li span.visit-link
+		padding-left: 10px
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
-	 
-
-
+	/*Header*/ 
+	.header .logo
+		width: 15.02%
+	.header .header-search
+		padding-left: 20px
+		width: 65.355%
+	.header .header-search span
+		left: 40px
+	.header .header-search input[type="text"]
+		width: 85%
+	.header .header-search button
+		width: 13.5%	
+	.header .time-frame
+		width: 19.625%
+	/*section most visited*/ 
+	.most-visited .col-md-6 li span.visit-title
+		display: block
+		text-align: center
+		padding-left: 0
+	.most-visited .col-md-6 li span.visit-link
+		text-align: center
+		display: block
+		padding-left: 0
+	/*section news*/ 
+	.nav-tabs
+		padding-bottom: 20px
+	.news .tab-content .col-lg-3:nth-child(1) ul li:nth-child(1) a span.news-title
+		padding-bottom: 13px
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	/*Header*/ 
+	.header .logo
+		width: 17.02%
+	.header .header-search
+		padding-left: 20px
+		width: 60.355%
+	.header .header-search input[type="text"]
+		width: 78%
+	.header .header-search button
+		width: 20.5%
+	.header .time-frame
+		width: 22.625%
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	/*Header*/ 
+	.header .logo
+		width: 21.02%
+	.header .header-search
+		padding-left: 20px
+		width: 50.355%
+	.header .header-search input[type="text"]
+		width: 70%
+	.header .header-search button
+		width: 28.5%
+	.header .time-frame
+		width: 28.625%
+@media only screen and (max-width : 640px)
+	/*Header*/
+	.header .logo
+		width: 40%
+	.header .time-frame
+		width: 60%
+	.header .header-search
+		padding-top: 15px
+		float: none
+		width: 98%
+		padding-bottom: 15px
+	.header .header-search span
+		top: 25px	
+	.header .header-search input[type="text"]
+		margin-top: 0px
+		 
+	/*footer*/
+	.footer	
+		text-align: center
+	.footer .footer-left
+		float: none
 
-
+	.footer .footer-left ul li
+		display: block
+		margin-left: 0px
+		margin-bottom: 10px
+	.footer .footer-left ul li:last-child,
+	.footer .footer-left ul li:nth-child(2),
+	.footer .footer-left ul li:nth-child(3) 
+		margin-left: 0px	
+		
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
 	/**/
@@ -57,3 +164,9 @@
 @media only screen and (min-width : 1200px)
 	/**/
 
+
+@media only screen and (min-width : 1400px)
+	/**/
+	.container
+		width: 1340px
+ 

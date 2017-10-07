@@ -31,8 +31,9 @@ h2
 	font-family: 'Roboto', sans-serif
 	color: #02455d
 	font-weight: 700
-	margin-left: -20px
-
+	
+a:hover
+	text-decoration: none
 section
 	padding: 92px 0	
  
@@ -70,6 +71,8 @@ section
 			width: 88%
 			display: inline-block
 			margin-top: 36px
+			font-size: 30px
+			font-family: 'Roboto', sans-serif
 
 		button
 			font-size: 26px
@@ -108,7 +111,7 @@ section
 			margin-top: -9px
 //Section most visited			
 .most-visited
- 	.col-md-6
+ 	.col-lg-3  
  		padding-top: 30px
  		ul
  			list-style: none
@@ -126,7 +129,7 @@ section
 					font-weight: 400
 					color: #fff
 					float: left
-					margin-left: -20px
+					
 		
 				span.visit-title	
 					color: #02455d
@@ -161,12 +164,12 @@ section
 //section news
 .news
 	padding-top: 0
-	.nav > li> a
-		padding-left: 0
+	.nav-tabs > li > a
+		border: none
 	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
 		border: none
-		padding-right: 0
-	.nav-tabs
+
+	.nav-tabs 
 		border: none
 		margin-left: -20px
 		li
@@ -176,7 +179,7 @@ section
 				font-size: 20px
 				color: #02455d
 	.tab-content
-		.col-md-6
+		.col-lg-3
 			ul
 				list-style: none
 				li
@@ -189,9 +192,11 @@ section
 							font-size: 16px
 							display: block
 							padding-bottom: 13px
+							padding-left: 20px
 						span.news-link
 							font-weight: 300
 							font-size: 14px
+							padding-left: 20px
 						span.news-category
 							display: inline-block
 							background-color: #548dff
@@ -231,7 +236,7 @@ section
 			li
 				display: inline-block
 				&:last-child
-					margin-right: -20px
+					
 					margin-left: 32px
 				&:nth-child(3)
 					margin-left: 33px
