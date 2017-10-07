@@ -1,0 +1,241 @@
+@import "vars"
+/* Test task for DCT */
+
+/* reser chrome user styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, nav, section, 
+time, mark, audio, video
+	-webkit-margin-before: 0px
+	-webkit-margin-after: 0px
+	-webkit-margin-start: 0px
+	-webkit-margin-end: 0px
+	-webkit-padding-start: 0px
+h1
+	font-size: 50px
+	font-family: 'times_new_romanregular'
+	color: #f5f6f8
+	margin: 0
+	font-weight: 400
+
+h2
+	font-size: 20px
+	font-family: 'Roboto', sans-serif
+	color: #02455d
+	font-weight: 700
+	margin-left: -20px
+
+section
+	padding: 92px 0	
+ 
+//Header 
+.header
+	background-color: #3cc8fb
+	.logo
+		display: inline-block
+		background-color: #55cefa
+		width: 13.02%
+		text-align: center	
+		line-height: 130px	
+		
+	.header-search
+		width: 71.355%
+		float: right
+		position: relative
+		padding-left: 50px
+
+		span
+			background-image: url("../img/search_icon.png")
+			background-size: cover
+			background-repeat: no-repeat
+			width: 32px
+			height: 32px
+			display: inline-block
+			position: absolute
+			top: 50px
+			left: 69px
+		input[type="text"]
+			height: 60px
+			border: none
+			outline: none
+			padding-left: 65px
+			width: 88%
+			display: inline-block
+			margin-top: 36px
+
+		button
+			font-size: 26px
+			font-family: 'Roboto', sans-serif
+			color:#fff
+			background-color: #facd55
+			border: none
+			height: 60px
+			outline: none
+			width: 11.5%
+			font-weight: 400
+			display: inline-block
+			vertical-align: bottom
+			
+
+
+
+	//live timer
+	.time-frame
+		display: inline-block
+		float: right
+		width: 15.625%
+		text-align: center
+		padding-top: 20px
+		#time-part
+			font-family: 'Roboto', sans-serif
+			color: #fff
+			font-size: 44px
+			font-weight: 400
+
+		#date-part
+			font-family: 'Roboto', sans-serif
+			color: #fff
+			font-size: 18px
+			font-weight: 400
+			margin-top: -9px
+//Section most visited			
+.most-visited
+ 	.col-md-6
+ 		padding-top: 30px
+ 		ul
+ 			list-style: none
+			li
+				clear: both
+				padding-top: 20px
+				span.visit-logo
+					width: 100px
+					height: 100px
+					background-color: #508aff
+					line-height: 100px
+					text-align: center
+					font-family: 'Roboto', sans-serif
+					font-size: 60px
+					font-weight: 400
+					color: #fff
+					float: left
+					margin-left: -20px
+		
+				span.visit-title	
+					color: #02455d
+					font-family: 'Roboto', sans-serif
+					font-weight: 400
+					font-size: 20px
+					padding-left: 20px
+					padding-top: 30px
+					display: inline-block
+					
+
+				span.visit-link
+					color: #a8a9a9
+					font-family: 'Roboto', sans-serif
+					font-weight: 400
+					font-size: 14px
+					padding-left: 20px
+			&:nth-child(2) ul li:nth-child(2) .visit-logo
+				background-color: #50ffd8
+			&:nth-child(3) ul li:nth-child(1) .visit-logo
+				background-color: #b350ff
+			&:nth-child(3) ul li:nth-child(2) .visit-logo
+				background-color: #50d4ff
+			&:nth-child(4) ul li:nth-child(1) .visit-logo
+				background-color: #ff508e
+			&:nth-child(4) ul li:nth-child(2) .visit-logo
+				background-color: #ffd850
+			&:nth-child(5) ul li:nth-child(1) .visit-logo
+				background-color: #ffa650
+			&:nth-child(5) ul li:nth-child(2) .visit-logo
+				background-color: #f64545
+//section news
+.news
+	padding-top: 0
+	.nav > li> a
+		padding-left: 0
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+		border: none
+		padding-right: 0
+	.nav-tabs
+		border: none
+		margin-left: -20px
+		li
+			a
+				font-family: 'Roboto', sans-serif
+				font-weight: 700
+				font-size: 20px
+				color: #02455d
+	.tab-content
+		.col-md-6
+			ul
+				list-style: none
+				li
+					padding-top: 20px
+					a
+						color: #02455d
+						font-family: 'Roboto', sans-serif
+						span.news-title
+							font-weight: 400
+							font-size: 16px
+							display: block
+							padding-bottom: 13px
+						span.news-link
+							font-weight: 300
+							font-size: 14px
+						span.news-category
+							display: inline-block
+							background-color: #548dff
+							color: #fff
+							padding: 2px 13px 2px 14px
+							float: right
+			&:nth-child(1) ul li:nth-child(1) a span.news-title
+				padding-bottom: 35px				
+			&:nth-child(1) ul li:nth-child(2) a span.news-category
+				background-color: #ff5460	
+			&:nth-child(2) ul li:nth-child(1) a span.news-category	
+				background-color: #8854ff	
+			&:nth-child(2) ul li:nth-child(2) a span.news-category	
+				background-color: #27c684
+			&:nth-child(3) ul li:nth-child(1) a span.news-category
+				background-color: #ff5460
+			&:nth-child(4) ul li:nth-child(1) a span.news-category
+				background-color: #27c684
+			&:nth-child(4) ul li:nth-child(2) a span.news-category
+				background-color: #fea956
+			
+//footer
+.footer
+	background-color: #4f626e
+	padding: 33px 0px 31px
+	vertical-align: middle
+	a
+		color: #fff
+		font-family: 'Roboto', sans-serif
+		font-weight: 300
+		font-size: 16px
+		
+	.footer-left
+		float: right
+		ul
+			list-style: none
+			li
+				display: inline-block
+				&:last-child
+					margin-right: -20px
+					margin-left: 32px
+				&:nth-child(3)
+					margin-left: 33px
+				&:nth-child(2)
+					margin-left: 32px
+
+@import "media"
