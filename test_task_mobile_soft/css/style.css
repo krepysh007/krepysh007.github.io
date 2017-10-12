@@ -1,0 +1,244 @@
+.gambling_area {
+	background-image: url('../img/table_bg.jpg');
+	-webkit-background-size: cover;
+	background-size: cover;
+	min-height: 328px;
+	width: 862px;
+	margin: 0 auto;
+}
+.table_one {
+	width: 50%;
+	padding: 23px 50px;
+}
+.cards_wrap ul {
+	list-style: none;
+	font-family: 'arialbold';
+	font-size: 11.09px;
+	color: #eaf9ee;
+}
+/*
+Cards top
+*/
+.cards_wrap ul li {
+	display: inline-block;
+	
+}
+.cards_wrap ul li .hand_wrap {
+	position: relative;
+}
+/*Add shadow for the top hands */
+.cards_top li:first-child .shadow {
+	background-image: url('../img/hands_top_bg.png');
+	width: 82px;
+	height: 86px;
+	display: inline-block;
+	position: absolute;
+	top: -54px;
+	left: 33px;
+}
+.cards_top li:nth-child(3) .shadow {
+	background-image: url('../img/hands_top_dark_bg.png');
+	width: 72px;
+	height: 69px;
+	display: inline-block;
+	position: absolute;
+	top: -47px;
+	left: 40px;
+	z-index: 150;
+}
+/*End add shadow for the top hands */
+
+.cards_wrap ul li .card1 {
+	background-image: url('../img/9_card.png');
+	width: 41px;
+	height: 57px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+	left: 45px;
+	z-index: 10;
+
+}
+
+
+.cards_wrap ul li .card2 {
+	background-image: url('../img/8_card.png');
+	width: 47px;
+	height: 59px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
+	top: 2px;
+	left: 20px;
+	z-index: 15;
+	
+}
+.cards_wrap ul li .value {
+	background-color: #ffab09;
+	border-radius: 3px;
+	padding: 3px 9px 4px;
+	display: inline-block;
+	position: relative;
+	top: -8px;
+	left: -43px;
+	z-index: 20;
+	
+}
+.cards_wrap ul li .number {
+	border-radius: 50%;
+	background-color: #734522;
+	width: 22px;
+	height: 22px;
+	display: inline-block;
+	text-align: center;
+	line-height: 22px;
+	position: relative;
+	right: 103px;
+	top: 5px;
+	z-index: 25;
+	
+
+}
+
+.cards_wrap ul li .gambler_icon {
+	background-image: url('../img/gambling_icon.png');
+	width: 69px;
+	height: 84px;
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
+	top: 28px;
+	left: -21px;
+	z-index: 1;
+
+}
+
+.cards_wrap ul li:nth-child(3) {
+	position: relative;
+	top: -4px;
+	right: 27px;
+	z-index: 110;
+}
+/*End card top*/
+
+/*Gambling table*/
+.gambling_table{
+	background-image: url('../img/table.png');
+	width: auto;
+	min-height: 150px;
+	background-repeat: no-repeat;
+	box-shadow:(0 8px 13px rgba(41, 27, 14, 0.97));
+	display: block;
+	z-index: 100;
+	position: relative;
+	left: 48px;
+	top: -13px;
+
+}
+.table_cover {
+	background-color: rgb(91, 174, 88);
+  	box-shadow: inset 0px 4px 3px 0px rgba(0, 0, 0, 0.36);
+	width: 229px;
+	height: 103px;
+	border-radius: 50px;
+	position: relative;
+	top: 10px;
+	left: 17px;
+	z-index: 110;
+	font-family: 'Days';
+}
+.table_number {
+  font-size: 15.41px;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 0.555;
+  position: relative;
+  top: 9px;
+  left: 87px;
+	  
+}
+/*Cards on the table */
+.table_cards ul {
+	list-style: none;
+}
+.table_cards ul li {
+	width: 29px;
+	height: 43px;
+	background-image: url('../img/8_table_card.png');
+	-webkit-background-size: cover;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
+	top: 16px;
+	left: 37px;
+	margin-left: -3px;
+}
+.table_cards ul li:nth-child(2),
+ .table_cards ul li:nth-child(4){
+ 	background-image: url('../img/9_table_card.png');
+ 	top: 15px;
+ }
+ /*logo on the table*/
+.table_cover .logo {
+	color: rgba(255, 255, 255, 0.09);
+	font-size: 18.49px;
+	position: relative;
+ 
+}
+/*End Gambling table*/
+
+/*Card bottom*/
+.cards_bottom li:first-child {
+	position: relative;
+	left: -51px;
+	top: 9px;
+
+}
+.cards_bottom li:first-child .value {
+	font-size: 13.56px;
+}
+
+
+.cards_bottom li .coins {
+	background-image: url('../img/coins.png');
+	width: 35px;
+	height: 34px;
+	position: relative;
+	display: inline-block;
+	right: 148px;
+	top: -15px;
+	z-index: 1;
+
+}
+.cards_bottom li:nth-child(2) {
+	position: relative;
+	right: 41px;
+	top: 10px
+}
+.cards_bottom li:nth-child(2) .coins {
+right: 150px;
+top: -10px;
+}
+/*Add shadow for the bottom hands */
+.cards_bottom li:first-child .shadow {
+	background-image: url('../img/hands_bottom_bg.png');
+	width: 106px;
+	height: 84px;
+	display: inline-block;
+	position: absolute;
+	top: -53px;
+	left: 11px;
+}
+.cards_bottom li:nth-child(2) .shadow {
+	background-image: url('../img/hands_bottom_dark_bg.png');
+	width: 92px;
+	height: 69px;
+	display: inline-block;
+	position: absolute;
+	top: -47px;
+	left: 19px;
+	z-index: 150;
+}

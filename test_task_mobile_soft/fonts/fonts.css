@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Days';
+  src: url('Days/Days.eot?#iefix') format('embedded-opentype'),
+  	   url('Days/Days.woff') format('woff'),
+  	   url('Days/Days.ttf')  format('truetype'),
+  	   url('Days/Days.svg#Days') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'arialbold';
+    src: url('ArialBold/arialbd-webfont.woff2') format('woff2'),
+         url('ArialBold/arialbd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
