@@ -1,0 +1,233 @@
+@import "vars"
+
+/* Template: Wedding
+	Made by Anton Knyazev
+	Wedding includes:
+	1. Header 
+	2. Banner
+	3. Dress
+	4. Studio
+	5. Testimonials
+	
+ */
+ /* reser chrome user styles */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, nav, section, 
+time, mark, audio, video
+	-webkit-margin-before: 0px
+	-webkit-margin-after: 0px
+	-webkit-margin-start: 0px
+	-webkit-margin-end: 0px
+	-webkit-padding-start: 0px
+h1
+	font-size: 45px
+	color: $color-dark
+	font-family: 'decorcttregular'
+	width: 486px 
+h2
+	font-family: $font
+	font-size: 24px
+	font-weight: 400
+	color: $color-dark
+	text-align: center
+.h2-underline	
+	height: 2px
+	width: 85px
+	background-color: $color-dark
+	margin: 0 auto
+	margin-top: 17px
+	margin-bottom: 36px
+p 
+	font-family: $font
+	font-size: 16px
+	font-weight: 400
+	color: #666666
+	width: 778px
+	margin: 0 auto
+	text-align: center
+section
+	padding-top: 80px
+	padding-bottom: 100px
+/*Header*/
+.header
+	background-color: rgba(255, 255, 255, 0.302)
+	z-index: 1000
+	position: absolute
+	top: 0
+	width: 100%
+	.logo 
+		float: left
+		line-height: 120px
+		z-index: 150
+	.menu
+		ul
+			list-style-type: none
+			li
+				display: inline-block
+				font-family: $font
+				font-weight: 600
+				font-size: 20px
+				color: $color-light
+				line-height: 120px
+				a
+					color: $color-light
+				&:last-child
+					float: right
+					font-size: 16px
+					line-height: 26px
+					margin-top: 20px
+					.mail
+						font-weight: 400
+				&:first-child
+					margin-left: 74px
+				&:nth-child(2)
+					margin-left: 34px
+				&:nth-child(3)	
+					margin-left: 30px
+				&:nth-child(4)
+					margin-left: 30px
+				&:nth-child(5)
+					margin-left: 30px
+
+/*Banner*/
+.banner-wrapper
+	.owl-one
+		.item
+			.banner-bg
+				height: 943px
+				overflow: hidden
+				img
+					width: 100%
+				
+					
+			h1
+				position: absolute
+				top: 33%
+				left: 18%
+				z-index: 500
+				text-align: center
+
+
+			.link-order
+				position: absolute
+				top: 46%
+				left: 23%
+				z-index: 500
+				font-size: 18px
+				font-weight: 700
+				padding: 15px 46px
+				border: 1px solid #660000
+				border-radius: 5px
+				font-family: $font
+				color: $color-dark
+				z-index: 500
+					
+ 
+/*Dress*/
+.dress
+	text-align: center
+	.col-md-3 
+		.product-wrap
+			.product-img
+				background-image: url("../img/dress3.jpg")
+				min-height: 490px
+				width: 254px
+				margin-top: 60px 
+			.product-bottom
+				margin-top: -100px
+				text-align: center
+				.product-title
+					font-family: $font
+					font-size: 14px
+					font-weight: 300
+					color: #9a8881
+					margin-bottom: 15px
+				.product-rate
+					display: inline-block
+					span.rate
+						background-image: url("../img/star-bold.png")
+						width: 12px
+						height: 13px
+						display: inline-block
+					span.rate-4
+						background-image: url("../img/star-light.png")
+						width: 12px
+						height: 13px
+						display: inline-block	
+				.product-link
+					display: inline-block
+					margin-left: 10px
+					a
+						color: #9a8881
+						font-size: 11px
+						padding: 7px 17px
+						border: 1px solid #9a8881
+						border-radius: 3px
+	.dress-row-2 .product-wrap 	.product-img
+		background-image: url("../img/dress6.jpg")
+		min-height: 490px
+		width: 254px
+		margin-top: 60px
+	.dress-row-3 .product-wrap 	.product-img
+		background-image: url("../img/dress9.jpg")
+		min-height: 490px
+		width: 254px
+		margin-top: 60px		
+.btn-link	
+	padding: 17px 58px
+	border: 1px solid #660000 	
+	border-radius: 5px	
+	color: $color-dark
+	font-family: $font
+	display: inline-block
+	margin-top: 100px
+	font-size: 16px
+	font-weight: 600
+/*Studio*/		
+.studio
+	text-align: none
+	.studio-left
+		display: inline-block
+		padding-left: 200px
+		p
+			width: 474px
+			text-align: justify
+			span
+				margin-top: 20px
+				display: inline-block
+		.btn-link
+			float: right
+			margin-top: 50px
+	.studio-right-bg
+		margin-left: 80px
+		background-image: url("../img/studio-right-bg.png")
+		background-repeat: no-repeat
+		width: 700px
+		height: 518px
+		display: inline-block
+		margin-top: 84px
+		vertical-align: top
+/*Testimonials*/			
+.testimonials
+	position: relative
+	.testimonials-left-bg
+		background-image: url("../img/studio-bg.png")
+		background-repeat: no-repeat
+		height: 577px	
+		width: 647px
+		position: absolute
+		top: -68%
+		left: 1%
+		display: block
+		z-index: 1000
+
+@import "media"
