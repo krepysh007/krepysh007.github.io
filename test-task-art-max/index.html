@@ -4,13 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/libs.css">
+	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	
 </head>
 <body>
 <div class="banner-wrapper">	
-<div class="owl-carousel owl-one">
+<div class="owl-carousel owl-one owl-theme ">
   <div class="item">
   	<div class="banner-bg"><img src="img/header-bg.jpg" alt="header-bg">
    		<h1>Подготовка к свадьбе  начинается здесь</h1>
@@ -36,13 +36,33 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="logo"><a href="#"><img src="img/logo.png" alt=""></a></div>
+					<!-- Menu mobile start -->
+					<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">Каталог товаров</a>
+  <a href="#">О нас</a>
+  <a href="#">Отзывы</a>
+  <a href="#">Галерея</a>
+  <a href="#">Написать</a>
+</div>
+<span class="menu-mobile" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<!-- Menu mobile end -->
 					<nav class="menu">
 						<ul>
 							<li><a href="#">Каталог товаров</a></li>
 							<li><a href="#">О нас</a></li>
 							<li><a href="#">Отзывы</a></li>
 							<li><a href="#">Галерея</a></li>
-							<li><a href="#">Написать</a></li>
+							<li><a href="#">Написать нам</a></li>
 							<li class="head-contact"><span>тел. (057) 01-01-200</span>
 								<br>
 								<span>тел. (057) 01-01-200</span><br><span class="mail">wedding_style@ukr.net</span>
@@ -64,7 +84,7 @@
 					totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta 
 					sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
 					consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-					<div class="col-md-3 col-md-offset-1">
+					<div class="col-lg-3 col-lg-offset-1 col-md-4">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -78,7 +98,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -92,7 +112,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-lg-3 col-md-4">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -106,7 +126,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-md-offset-1 dress-row-2">
+					<div class="col-lg-3 col-lg-offset-1 col-md-4 dress-row-2">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -120,7 +140,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 dress-row-2">
+					<div class="col-lg-3 col-md-4 dress-row-2">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -134,7 +154,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 dress-row-2">
+					<div class="col-lg-3 col-md-4 dress-row-2">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -148,7 +168,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 col-md-offset-1 dress-row-3">
+					<div class="col-lg-3 col-lg-offset-1 col-md-4 dress-row-3">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -162,7 +182,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 dress-row-3">
+					<div class="col-lg-3 col-md-4 dress-row-3">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -176,7 +196,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-3 dress-row-3">
+					<div class="col-lg-3 col-md-4 dress-row-3">
 						<div class="product-wrap">
 							<div class="product-img"></div>
 							<div class="product-bottom">
@@ -214,8 +234,96 @@
 <section class="testimonials">
 
 	<h2>Отзывы о нашей работе</h2>
-	<div class="h2-underlin"></div>
-	<div class="testimonials-left-bg"></div>
+	<div class="h2-underline"></div>
+	<div class="owl-carousel owl-two">
+		<div class="item">
+		<span class="counter"><2/18></span>
+			<div class="left-testimonials">
+				<h3>Ирина Белая</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+</p>
+				<span class="date">21. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+			<div class="right-testimonials">
+				
+				<h3>Алина Юрьева</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+.</p>
+				<span class="date">28. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+		</div>
+		<div class="item">
+		<span class="counter"><4/18></span>
+			<div class="left-testimonials">
+				<h3>Ирина Белая</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+</p>
+				<span class="date">21. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+			<div class="right-testimonials">
+				
+				<h3>Алина Юрьева</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+</p>
+				<span class="date">28. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+		</div>
+		<div class="item">
+		<span class="counter"><6/18></span>
+			<div class="left-testimonials">
+				<h3>Ирина Белая</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+</p>
+				<span class="date">21. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+			<div class="right-testimonials">
+				
+				<h3>Алина Юрьева</h3>
+				<p>On the other hand, we denounce with righteous
+ indignation and dislike men who are so beguiled
+ and demoralized by the charms of pleasure of 
+ moment, so blinded by desire, that they cannot 
+foresee the pain and trouble that are bound.
+
+.</p>
+				<span class="date">28. 07. 2017</span>
+				<div class="testimonial-bg"></div>
+			</div>
+		</div>
+	</div>
+	<a href="#" class="btn-link">Смотреть все</a>
+	<div class="testimonials-left-bg"><img src="img/studio-bg.png" alt="studio-bg"></div>
+	<div class="testimonials-rigth-bg"></div>
 </section>
 
 
