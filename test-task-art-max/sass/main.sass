@@ -1,4 +1,5 @@
 @import "vars"
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext')
 
 /* Template: Wedding
 	Made by Anton Knyazev
@@ -28,13 +29,16 @@ time, mark, audio, video
 	-webkit-margin-start: 0px
 	-webkit-margin-end: 0px
 	-webkit-padding-start: 0px
+body	
+	font-family: 'Comfortaa', cursive
+	font-weight: 400
 h1
 	font-size: 45px
 	color: $color-dark
 	font-family: 'decorcttregular'
 	width: 486px 
 h2
-	font-family: $font
+	
 	font-size: 24px
 	font-weight: 400
 	color: $color-dark
@@ -46,8 +50,17 @@ h2
 	margin: 0 auto
 	margin-top: 17px
 	margin-bottom: 36px
+h3
+
+	font-size: 16px
+	font-weight: 700
+	color: $color-dark
+	text-align: center
+	padding-top: 20px
+
+
 p 
-	font-family: $font
+
 	font-size: 16px
 	font-weight: 400
 	color: #666666
@@ -73,8 +86,7 @@ section
 			list-style-type: none
 			li
 				display: inline-block
-				font-family: $font
-				font-weight: 600
+				font-weight: 700
 				font-size: 20px
 				color: $color-light
 				line-height: 120px
@@ -85,6 +97,9 @@ section
 					font-size: 16px
 					line-height: 26px
 					margin-top: 20px
+					margin-right: -20px
+					text-align: right
+
 					.mail
 						font-weight: 400
 				&:first-child
@@ -97,13 +112,57 @@ section
 					margin-left: 30px
 				&:nth-child(5)
 					margin-left: 30px
+	/*Mobile menu*/					
+	.sidenav 
+		height: 100%
+		width: 0
+		position: fixed
+		z-index: 1
+		top: 0
+		right: 0
+		background-color: #85334a
+		overflow-x: hidden
+		transition: 0.5s
+		padding-top: 60px
+		font-weight: 700
 
+	.sidenav a 
+		padding: 8px 8px 8px 32px
+		text-decoration: none
+		font-size: 25px
+		color: #cbcaca
+		display: block
+		transition: 0.3s
+
+
+	.sidenav a:hover 
+		color: #f1f1f1
+
+
+	.sidenav .closebtn 
+		position: absolute;
+		top: 0;
+		right: 25px;
+		font-size: 36px;
+		margin-left: 50px;
+ 
+	.menu-mobile 
+		float: right
+		color: #85334a
+		margin-top: 40px
+		display: none
+ 
+@media screen and (max-height: 450px) 
+	.sidenav 
+		padding-top: 15px
+	.sidenav a 
+		font-size: 18px
 /*Banner*/
 .banner-wrapper
-	.owl-one
+	.owl-carousel 
 		.item
 			.banner-bg
-				height: 943px
+				height: 923px
 				overflow: hidden
 				img
 					width: 100%
@@ -111,42 +170,88 @@ section
 					
 			h1
 				position: absolute
-				top: 33%
-				left: 18%
-				z-index: 500
+				top: 34%
+				left: 21%
+				z-index: 1500
 				text-align: center
+				display: block
+				font-family: 'DecorCTT' 
+				font-weight: 700
+				font-size: 72px
+				width: 502px
+				line-height: 50px
 
-
+  
 			.link-order
 				position: absolute
-				top: 46%
-				left: 23%
+				top: 54.5%
+				left: 26%
 				z-index: 500
 				font-size: 18px
-				font-weight: 700
-				padding: 15px 46px
+				font-weight: 400
+				padding: 12px 48px
 				border: 1px solid #660000
 				border-radius: 5px
-				font-family: $font
 				color: $color-dark
 				z-index: 500
-					
- 
+
+		.owl-nav
+			display: block
+			.owl-prev
+				background-image: url("../img/back-arrow.png")
+				width: 20px
+				height: 33px
+				position: absolute
+				top: 46%
+				left: 12%
+
+			.owl-next
+				background-image: url("../img/next-arrow.png")
+				width: 20px
+				height: 33px
+				position: absolute
+				top: 46%
+				right: 12%
+.owl-theme .owl-dots
+	position: absolute
+	top: 87.5%
+	left: 48%
+	z-index: 600					
+.owl-theme .owl-dots .owl-dot.active span
+	background: #fff
+	border: none
+.owl-theme .owl-dots .owl-dot:hover span
+	background: #fff	
+	border: 1px	solid #fff
+.owl-theme .owl-dots .owl-dot span
+	background: none
+	border: 1px solid #9a8881
+	width: 14px
+	height: 14px
+	margin: 5px 3px
+.owl-theme .owl-nav [class*='owl-']
+	background: none
+	color: #fff	
+.owl-theme .owl-nav [class*="owl-"]:hover
+	
+	color: #fff	
+.owl-theme .owl-nav [class*='owl-']:visited
+	color: #fff		
 /*Dress*/
 .dress
 	text-align: center
-	.col-md-3 
+	.col-lg-3 
 		.product-wrap
 			.product-img
 				background-image: url("../img/dress3.jpg")
 				min-height: 490px
 				width: 254px
 				margin-top: 60px 
+
 			.product-bottom
 				margin-top: -100px
 				text-align: center
 				.product-title
-					font-family: $font
 					font-size: 14px
 					font-weight: 300
 					color: #9a8881
@@ -172,6 +277,11 @@ section
 						padding: 7px 17px
 						border: 1px solid #9a8881
 						border-radius: 3px
+		&:hover
+			transition: 0.3 easy
+			transform: scale(1.1)	
+
+		
 	.dress-row-2 .product-wrap 	.product-img
 		background-image: url("../img/dress6.jpg")
 		min-height: 490px
@@ -187,11 +297,11 @@ section
 	border: 1px solid #660000 	
 	border-radius: 5px	
 	color: $color-dark
-	font-family: $font
 	display: inline-block
 	margin-top: 100px
 	font-size: 16px
 	font-weight: 600
+ 
 /*Studio*/		
 .studio
 	text-align: none
@@ -207,6 +317,7 @@ section
 		.btn-link
 			float: right
 			margin-top: 50px
+			z-index: 1600
 	.studio-right-bg
 		margin-left: 80px
 		background-image: url("../img/studio-right-bg.png")
@@ -219,15 +330,91 @@ section
 /*Testimonials*/			
 .testimonials
 	position: relative
+	text-align: center
 	.testimonials-left-bg
-		background-image: url("../img/studio-bg.png")
-		background-repeat: no-repeat
-		height: 577px	
-		width: 647px
 		position: absolute
 		top: -68%
 		left: 1%
 		display: block
-		z-index: 1000
+		z-index: 10
+	.testimonials-rigth-bg	
+		background-image: url("../img/testimonials-right-bg.png")
+		background-repeat: no-repeat
+		height: 406px	
+		width: 350px
+		position: absolute
+		top: 30%
+		right: 20px
+		display: block
+		z-index: 10
 
+	.owl-carousel
+		display: block
+		.item 
+			position: relative
+			.left-testimonials
+				width: 50%
+				display: inline-block
+				padding-left: 25%
+				.testimonial-bg
+					background-image: url("../img/testimonials-bg.png")
+					width: 96px
+					height: 105px
+					background-repeat: no-repeat
+					display: block
+					position: absolute
+					top: 50%
+					margin-left: -7px
+				p
+					width: 286px
+					font-weight: 300
+					color: #666666
+					font-size: 12px
+					text-align: justify
+					line-height: 16px
+					padding-top: 25px
+					padding-bottom: 25px
+				span.date
+					font-size: 12px
+					font-weight: 700
+					color: #666666
+					float: right
+					margin-right: 29%
+			.right-testimonials
+				width: 50%
+				float: right
+				padding-right: 25%
+				.testimonial-bg
+					background-image: url("../img/testimonials-bg.png")
+					width: 96px
+					height: 105px
+					background-repeat: no-repeat
+					display: block
+					position: absolute
+					top: 50%
+					margin-left: -7px
+				p
+					padding-top: 25px
+					padding-bottom: 25px
+					width: 286px
+					font-weight: 300
+					color: #666666
+					font-size: 12px
+					text-align: justify
+					line-height: 16px
+				span.date
+					font-size: 12px
+					font-weight: 700
+					color: #666666
+					float: right
+					margin-right: 29%
+					z-index: 600
+			.counter	
+				position: absolute	
+				top: -33
+				right: 10%
+				display: block
+				font-size: 16px
+				font-weight: 400
+		
 @import "media"
