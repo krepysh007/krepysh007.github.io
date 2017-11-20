@@ -1,4 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,700&subset=cyrillic,cyrillic-ext");
+@font-face {
+    font-family:'DecorCTT';
+    src: url('../fonts/Decor/DecorCTT.eot');
+	src: url('../fonts/Decor/DecorCTT.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Decor/DecorCTT.woff2') format('woff2'),
+		url('../fonts/Decor/DecorCTT.woff') format('woff'),
+		url('../fonts/Decor/DecorCTT.svg#DecorCTT') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00BB;
+}
 /* Template: Wedding
 	Made by Anton Knyazev
 	Wedding includes:
