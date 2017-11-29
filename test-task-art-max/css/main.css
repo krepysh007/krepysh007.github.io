@@ -627,5 +627,5 @@ section {
   /**/
   /*Banner*/
   .banner-wrapper .owl-one .item .banner-bg img {
-    width: 1560px;
+    width: auto;
     margin: 0 auto; } }
