@@ -500,29 +500,21 @@ header {
     margin-top: 180px;
     text-align: left; }
     .contact_information .contact_info ul {
-      list-style-type: none; }
+      list-style-type: none;
+      text-align: center; }
       .contact_information .contact_info ul li {
         display: inline-block;
         font-family: 'MullerRegular';
         font-size: 16px;
         line-height: 24px;
         text-align: left;
-        position: relative; }
-        .contact_information .contact_info ul li span {
-          display: inline-block;
-          position: absolute;
-          top: 5px;
-          left: -40px;
-          font-size: 30px; }
-        .contact_information .contact_info ul li:first-child {
-          width: 190px;
-          margin-left: 100px; }
-        .contact_information .contact_info ul li:nth-child(2) {
-          width: 146px;
-          margin-left: 198px; }
-        .contact_information .contact_info ul li:nth-child(3) {
-          width: 185px;
-          margin-left: 200px; }
+        position: relative;
+        padding-left: 20px;
+        padding-right: 130px; }
+        .contact_information .contact_info ul li:last-child {
+          padding-right: 50px; }
+      .contact_information .contact_info ul span .fa {
+        font-size: 30px; }
 
 .footer {
   background-color: #282c48; }
@@ -663,25 +655,11 @@ header {
   .contact_information .contact_info ul li {
     display: block;
     margin-left: 0px;
-    width: auto;
     text-align: center;
+    padding: 10px 0px 20px;
     /*Footer*/ }
-    .contact_information .contact_info ul li:first-child {
-      margin-left: 0px;
-      text-align: center;
-      width: auto; }
-    .contact_information .contact_info ul li:nth-child(2) {
-      margin-left: 0px;
-      text-align: center;
-      margin-top: 20px;
-      width: auto; }
-    .contact_information .contact_info ul li:nth-child(3) {
-      margin-left: 0px;
-      text-align: center;
-      margin-top: 20px;
-      width: auto; }
-    .contact_information .contact_info ul li span {
-      position: relative; }
+    .contact_information .contact_info ul li:last-child {
+      padding-right: 0px; }
   .footer .container .logo_wrap {
     display: block;
     text-align: center; }
@@ -803,13 +781,49 @@ header {
     line-height: 32px; } }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
-  /**/ }
+@media only screen and (max-width: 430px) {
+  /**/
+  /*Product catalog*/
+  .product_catalog .owl-carousel .owl-item {
+    width: 95%; }
+  .product_catalog .owl-carousel .image_wrapper .main_image {
+    min-height: 128px;
+    width: 182px; }
+  .product_catalog .owl-carousel .image_wrapper .item_image1 {
+    min-height: 69px;
+    width: 95px; }
+  .product_catalog .owl-carousel .image_wrapper .item_image2 {
+    min-height: 63px;
+    width: 88px; }
+  .product_catalog .owl-carousel .image_wrapper .item_image3 {
+    min-height: 66px;
+    width: 95px; }
+  .product_catalog .owl-carousel .text_wrapper .printer_name {
+    width: 95%;
+    font-size: 16px; }
+  .product_catalog .owl-carousel .text_wrapper .printer_price {
+    width: 95%; }
+  .product_catalog .owl-carousel .text_wrapper .printer_description {
+    width: 100%;
+    margin-right: 0px; }
+  .product_catalog .owl-carousel .text_wrapper .link_wrap a {
+    padding: 10px 10px;
+    width: 95%; }
+  .product_catalog .owl-carousel .text_wrapper .link_wrap a {
+    padding: 10px 10px;
+    width: 170px; }
+  .product_catalog .owl-carousel .text_wrapper {
+    width: 95%; }
+  .product_catalog .owl-carousel .text_wrapper .buy_now_link {
+    width: 100%;
+    margin: 0; }
+  .product_catalog .owl-carousel .text_wrapper .or {
+    margin: 15px 0px; } }
 
 /*==========  Mobile First  ==========*/
 /* Custom, iPhone Retina */
 @media only screen and (min-width: 320px) {
-  /**/
+  /*Header*/
   .container .top_text {
     font-size: 35px;
     line-height: 35px; }
