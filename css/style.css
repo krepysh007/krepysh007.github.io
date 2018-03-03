@@ -685,8 +685,8 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .chart {
-  width: 160px;
-  height: 160px;
+  width: 165px;
+  height: 165px;
   margin: 0 auto 40px auto;
   position: relative;
   text-align: center;
