@@ -1296,7 +1296,9 @@ input[type="text"] {
 #contact{
   padding-top: 5em;
   padding-bottom: 5em;
-  clear: both }
+  clear: both;
+  background-color: #fff;
+}
 
 #contact .col-md-4 {
   margin-top: 20px;
