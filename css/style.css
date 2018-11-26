@@ -1304,11 +1304,11 @@ input[type="text"] {
   margin-top: 20px;
 }
 #contact .fa{
-  color: #FFF009;
+  color: #FF9000;
   font-size: 26px;
 
 }
-#contact .fa .fa-copyright.fa-copyright:before {
+#contact .fa .fa-copyright:before {
  color: #fff;
  font-size: 16px;
 }
